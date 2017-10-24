@@ -10,7 +10,7 @@ title:            Alisha Aneja
 tagline:          'Welcome to my world!'
 description:      'A software developer by profession'
 url:              http://alisha17.github.io
-baseurl:          /
+baseurl:          /alisha17.github.io/
 
 author:
   name:           'Mark Otto'

@@ -6,22 +6,22 @@ highlighter:      pygments
 permalink:        pretty
 
 # Setup
-title:            Alisha Aneja
-tagline:          'Welcome to my world!'
-description:      'A software developer by profession'
-url:              http://alisha17.github.io
-baseurl:          /alisha17.github.io
+title:            Hyde
+tagline:          'A Jekyll theme'
+description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+url:              http://hyde.getpoole.com
+baseurl:          /
 
 author:
-  name:           'Alisha Aneja'
-  url:            https://twitter.com/alisha_aneja
+  name:           'Mark Otto'
+  url:            https://twitter.com/mdo
 
-paginate:         1
+paginate:         5
 
 # Custom vars
 version:          2.1.0
 
 github:
-  repo:           https://github.com/alisha17/
+  repo:           https://github.com/poole/hyde
 
 gems: [jekyll-gist, jekyll-paginate]

@@ -12,5 +12,10 @@
     </div>
 
     <script id="dsq-count-scr" src="//alisha17-github-io.disqus.com/count.js" async></script>
+
+    {% if jekyll.environment == 'production' %}
+    	{% include analytics.html %}
+    {% endif %}
+
   </body>
 </html>

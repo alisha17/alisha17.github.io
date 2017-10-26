@@ -2,6 +2,7 @@
 layout: post
 title: Example content
 categories: Personal
+comments: true
 ---
 
 

@@ -8,12 +8,16 @@ permalink:        pretty
 # Setup
 title:            Alisha Aneja
 tagline:          'Welcome to my world!'
-description:      'A software developer by profession'
+description:      'Programmer by Profession, Explorer by Heart <3'
 url:              http://alisha17.github.io
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Alisha Aneja'
+  url:             alisha17.github.io
+  email:          'anejaalisha37@gmail.com'
+  github:         'https://github.com/alisha17'
+  twitter:        'https://twitter.com/alisha_aneja17'
+  linkedin:       'https://www.linkedin.com/in/alisha-aneja-509252128/'
 
 paginate:         5
 
@@ -23,4 +27,4 @@ version:          2.1.0
 github:
   repo:           https://github.com/alisha17
 
-gems: [jekyll-gist, jekyll-paginate, jekyll-archives]
+gems:             [jekyll-gist, jekyll-paginate, jekyll-archives]

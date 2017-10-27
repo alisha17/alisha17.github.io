@@ -18,9 +18,9 @@ author:
   github:         'https://github.com/alisha17'
   twitter:        'https://twitter.com/alisha_aneja17'
   linkedin:       'https://www.linkedin.com/in/alisha-aneja-509252128/'
-  wordpress:      'https://mealisha.wordpress.blog'
+  wordpress:      'https://mealisha.wordpress.com/'
 
-paginate:         5
+paginate:         2
 
 # Custom vars
 version:          2.1.0

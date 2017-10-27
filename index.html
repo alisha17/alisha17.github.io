@@ -14,7 +14,7 @@ title: Home
 
     <span class="post-date">{{ post.date | date_to_string }}</span>
 
-    {{ post.content }}
+    {{ post.content | markdownify | strip_html | truncatewords: 70 }}
   </div>
   {% endfor %}
 </div>
@@ -36,4 +36,4 @@ title: Home
   {% endif %}
 </div>
 
-<a href="https://alisha17.github.io{{ post.url }}#disqus_thread">0 Comments</a>
+<!-- <a href="https://alisha17.github.io{{ post.url }}#disqus_thread">0 Comments</a> -->

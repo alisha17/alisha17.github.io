@@ -29,3 +29,9 @@ github:
   repo:           https://github.com/alisha17
 
 gems:             [jekyll-gist, jekyll-paginate, jekyll-archives]
+
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      image: true

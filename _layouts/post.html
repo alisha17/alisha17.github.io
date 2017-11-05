@@ -8,21 +8,34 @@ layout: default
   {{ content }}
 </div>
 
-<div class="related">
-  <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+{% for category in page.categories %}
+  {% assign moreThanOneInCategory = false %}
+  {% assign posts = site.categories[category] %}
+
+  {% for post in posts %}
+    {% if forloop.length > 1 %}
+      {% assign moreThanOneInCategory = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% if moreThanOneInCategory == true %}
+    <div class="related-posts">
+      <h3>Related Posts</h3>
+
+      <ul>
+        {% for post in posts %}
+          {% unless post.url == page.url %}
+            <li>
+              <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+
+              Published on <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+            </li>
+          {% endunless %}
+        {% endfor %}
+      </ul>
+    </div>
+  {% endif %}
+{% endfor %}
 
 {% include disqus.html %}
 

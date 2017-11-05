@@ -62,4 +62,4 @@ Will update my internship experience once I start. There's still time in it. :P
 
 *EDIT : HDE team visited Melbourne and we had a nice dinner at +39 Pizzeria on 14th Sept'17. It was an informal meeting and the peeps from HDE were so friendly. I didn't feel even for a second that I was meeting them for the first time. We clicked some pics as well, though not really high quality ones but yeah, manageable!* :P
 
-![pizzeria hde]({{ site.url }}/assets/IMG_3324.jpg)
+![pizzeria hde](/alisha17.github.io/assets/IMG_3324.jpg)

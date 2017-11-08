@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>ALISHA ANEJA</title>
+ <title>Alisha Aneja</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-09T00:19:14+11:00</updated>
+ <updated>2017-11-09T02:05:06+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -14,7 +14,7 @@
  
  <entry>
    <title>[MLAI Meetup Talk] My Experience as a Machine Learning Intern</title>
-   <link href="http://localhost:4000/silverpond/2017/10/18/mlai/"/>
+   <link href="http://localhost:4000/silverpond/2017/10/18/mlai.html"/>
    <updated>2017-10-18T00:00:00+11:00</updated>
    <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
    <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt;
@@ -42,13 +42,17 @@
 
 &lt;h1&gt;Project 2:&lt;/h1&gt;
 
-&lt;p&gt;At the moment, I am working on an another project in which we “Count the number of cars in overhead imagery with deep learning”. This project tries to replicate the results presented in this paper: Mundhenk et al. 2016&lt;/p&gt;
+&lt;p&gt;At the moment, I am working on an another project in which we “Count the number of cars in overhead imagery with deep learning”. This project tries to replicate the results presented in this paper: &lt;a href=&quot;https://gdo-datasci.ucllnl.org/cowc/mundhenk_et_al_eccv_2016.pdf&quot;&gt;Mundhenk et al. 2016&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Vehicle localization from satellite imagery has myriad use cases in the commercial, national security, and humanitarian realms. On the commercial front, a number of companies have attempted to infer retail traffic from parking lot density levels, and tracking delivery trucks in near real-time is one of the far-field goals of satellite imagery analytics. In the realm of national security, detecting the buildup of war materiel in unstable regions would provide obvious value, as would locating convoys of vehicles vectored towards unmanned border crossings, or identifying a large number of vehicles staging just outside the range of terrestrial border monitoring equipment. On the humanitarian front, one might attempt to infer the scope of natural disasters from clusters (or absences) of vehicles, or determine optimal travel routes for disaster relief in unknown areas based on observations of local vehicle movements.
 Dataset&lt;/p&gt;
 
-&lt;p&gt;The dataset consists of large number of unique cars (~33,000) from six different imagesets, where each imageset has more than 60,000 images. Each imageset covers a different geographical location and produced by different imagers and has different training and test sets. The regions are Toronto Canada, Selwyn New Zealand, Potsdam &amp;amp; Vaihingen Germany, Columbus &amp;amp; Utah United States. Data is collected via aerial platforms, but at a view angle such that it resembles satellite imagery. The imagery has a resolution of 15 cm ground sample distance (GSD) that is approximately twice as good as the current best resolution of commercial satellite imagery.
-Dataset consists of images like these:&lt;/p&gt;
+&lt;p&gt;The dataset consists of large number of unique cars (~33,000) from six different imagesets, where each imageset has more than 60,000 images. Each imageset covers a different geographical location and produced by different imagers and has different training and test sets. The regions are Toronto Canada, Selwyn New Zealand, Potsdam &amp;amp; Vaihingen Germany, Columbus &amp;amp; Utah United States. Data is collected via aerial platforms, but at a view angle such that it resembles satellite imagery. The imagery has a resolution of 15 cm ground sample distance (GSD) that is approximately twice as good as the current best resolution of commercial satellite imagery.&lt;/p&gt;
+
+&lt;p&gt;Dataset consists of images like these:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/null1.png&quot; alt=&quot;pizzeria hde3&quot;&gt;
+&lt;img src=&quot;http://localhost:4000/assets/null3.png&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
 
 &lt;h2&gt;Approach:&lt;/h2&gt;
 
@@ -94,11 +98,67 @@ Dataset consists of images like these:&lt;/p&gt;
  </entry>
  
  <entry>
+   <title>Custom Links within ActiveAdmin Pages - Ruby on Rails</title>
+   <link href="http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails.html"/>
+   <updated>2017-10-04T00:00:00+11:00</updated>
+   <id>http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails</id>
+   <content type="html">&lt;p&gt;I am working on a Ruby on Rails project in my organization and I am very new to Rails. It took me days to find a way for creating custom buttons and their methods alongside the default &amp;#39;Edit, View, Delete .....&amp;#39; buttons.&lt;/p&gt;
+
+&lt;p&gt;I finally found a fix to this and I concluded that Rails does really magical stuff behind the scenes which isn&amp;#39;t obvious to a new programmer.&lt;/p&gt;
+
+&lt;p&gt;So, to give an overview of my task -- I am working on creating an &amp;#39;Instances&amp;#39; tab on the ActiveAdmin index page. This instance page will list all of the current available AWS EC2 instances, and a link to VIEW, EDIT, DELETE (already available ones), STOP and REBOOT (custom ones, which I needed to make).&lt;/p&gt;
+
+&lt;p&gt;This is how my page looks after adding the custom links:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/ruby.png&quot; alt=&quot;pizze&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;Oh and I removed the &amp;#39;EDIT&amp;#39; link, I will show this as well. This one is pretty straighforward though.&lt;/p&gt;
+
+&lt;p&gt;So for adding the custom links:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;selectable_column&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;id_column&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:image_id&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:min_count&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:max_count&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:monitoring&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link_to&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Stop&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop_admin_instance_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link_to&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Reboot&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We are creating these links in the seperate columns, with the name &amp;#39;Stop&amp;#39;, redirect path as &amp;quot;/admin/instances/stop&amp;quot;, which Rails already has a helper for, nameOfMethod&lt;em&gt;admin&lt;/em&gt;pageName&lt;em&gt;path(your&lt;/em&gt;record), and the request method (GET/POST/PUT/DELETE). Similarly, it goes for &amp;#39;Reboot&amp;#39; a well. To check this helper route, run rake routes from the console.&lt;/p&gt;
+
+&lt;p&gt;Now, we will add the method for stop button, which goes like this:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;member_action&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+       &lt;span class=&quot;no&quot;&gt;AwsService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stop_ec2_instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+       &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;/admin/instances/&amp;quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;I have made an AWS Service to stop the instances, using aws-ruby sdk, but that&amp;#39;s out of the scope of this post.&lt;/p&gt;
+
+&lt;p&gt;params(:id) will send the id of the record on which this method would be called, to the find method, to find this record from the table and then the further instructions will be carried out on the record.&lt;/p&gt;
+
+&lt;p&gt;And to remove the default edit link, I did as follows:&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:except&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:edit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Basically, in the controller section, you specify that all actions take place except the edit one&amp;#39;. If you wanted to remove, for example, delete action, you would just have to add delete similarly as the edit action.&lt;/p&gt;
+
+&lt;p&gt;I hope this would help someone :)&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
    <title>Keep Calm and go to Code Camp!</title>
-   <link href="http://localhost:4000/code%20camp/2017/09/29/codecamp/"/>
+   <link href="http://localhost:4000/code%20camp/2017/09/29/codecamp.html"/>
    <updated>2017-09-29T00:00:00+10:00</updated>
    <id>http://localhost:4000/code%20camp/2017/09/29/codecamp</id>
-   <content type="html">&lt;p&gt;First some pictures!&lt;/p&gt;
+   <content type="html">&lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is.&lt;/p&gt;
+
+&lt;p&gt;Now some pictures!&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/1.jpg&quot; alt=&quot;pizzeria hde1&quot;&gt;&lt;/p&gt;
 
@@ -108,7 +168,7 @@ Dataset consists of images like these:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image3.jpeg&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is. The classes are divided into 4 groups:&lt;/p&gt;
+&lt;p&gt;The classes are divided into 4 groups:&lt;/p&gt;
 
 &lt;h2&gt;Little League&lt;/h2&gt;
 
@@ -164,7 +224,7 @@ Dataset consists of images like these:&lt;/p&gt;
  
  <entry>
    <title>Interview Experience with HDE Inc.</title>
-   <link href="http://localhost:4000/hde/2017/09/02/hde-interview/"/>
+   <link href="http://localhost:4000/hde/2017/09/02/hde-interview.html"/>
    <updated>2017-09-02T00:00:00+10:00</updated>
    <id>http://localhost:4000/hde/2017/09/02/hde-interview</id>
    <content type="html">&lt;p&gt;HDE Inc. is a Japanese Cloud Security Provider established in 1996 and their Global Internship Program (GIP) has become very popular in recent times.&lt;/p&gt;
@@ -233,12 +293,12 @@ Dataset consists of images like these:&lt;/p&gt;
  
  <entry>
    <title>First Week of Machine Learning Internship at SilverPond</title>
-   <link href="http://localhost:4000/silverpond/2017/08/27/first-week/"/>
+   <link href="http://localhost:4000/silverpond/2017/08/27/first-week.html"/>
    <updated>2017-08-27T00:00:00+10:00</updated>
    <id>http://localhost:4000/silverpond/2017/08/27/first-week</id>
    <content type="html">&lt;p&gt;I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.&lt;/p&gt;
 
-&lt;p&gt;SilverPond is a team of data scientists, machine learning specialists, software engineers and mathematicians who design solutions to hard problems. For over 13 years, they have developed big data and software solutions for clients in various industries ranging from utilities, retail, and technology, to healthcare, education and research like Australia Post and 7-11. They are also actively involved in sharing knowledge about Artificial Intelligence, Machine Learning, and various other technologies by hosting meetups and conferences. Compose:: Melbourne (Functional Programming Conference) is supported and managed by SilverPond its team members. They are also holding a 2-day Deep Learning Workshop on 5th and 6th Dec&amp;#39;17. The curriculum looks pretty interesting for anyone who would like to supplement their Data Science learning. The details can be found here: &lt;a href=&quot;https://www.eventbrite.com/e/deep-learning-2-day-workshop-december-tickets-36675083161?aff=erellivmlt&quot;&gt;Deep Learning Workshop&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;SilverPond is a team of data scientists, machine learning specialists, software engineers and mathematicians who design solutions to hard problems. For over 13 years, they have developed big data and software solutions for clients in various industries ranging from utilities, retail, and technology, to healthcare, education and research like Australia Post and 7-11. They are also actively involved in sharing knowledge about Artificial Intelligence, Machine Learning, and various other technologies by hosting meetups and conferences. &lt;a href=&quot;http://www.composeconference.org/&quot;&gt;Compose:: Melbourne&lt;/a&gt; (Functional Programming Conference) is supported and managed by SilverPond its team members. They are also holding a 2-day Deep Learning Workshop on 5th and 6th Dec&amp;#39;17. The curriculum looks pretty interesting for anyone who would like to supplement their Data Science learning. The details can be found here: &lt;a href=&quot;https://www.eventbrite.com/e/deep-learning-2-day-workshop-december-tickets-36675083161?aff=erellivmlt&quot;&gt;Deep Learning Workshop&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;My first day involved creating accounts across various mediums that Silverpond uses for collaboration like Asana (just like Trello), Slack, Gitlab and conventional email account and setting up the in-house project, Silverbrane. While setting up, some issues cropped up but eventually I resolved it and added these in the documentation. But it&amp;#39;s technology stack involves Ruby on Rails, in which I am not really proficient, so my first step involved getting familiar with the main functioning of the project and Ruby (of course!).&lt;/p&gt;
 

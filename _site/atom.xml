@@ -1,16 +1,97 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>Alisha Aneja</title>
+ <title>ALISHA ANEJA</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-07T01:18:22+11:00</updated>
+ <updated>2017-11-09T00:19:14+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
    <email>anejaalisha37@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[MLAI Meetup Talk] My Experience as a Machine Learning Intern</title>
+   <link href="http://localhost:4000/silverpond/2017/10/18/mlai/"/>
+   <updated>2017-10-18T00:00:00+11:00</updated>
+   <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
+   <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt;
+
+&lt;p&gt;This is me at SilverPond :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image1.jpeg&quot; alt=&quot;pizzer&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I spent initial few weeks getting familiar with Silverbrane. Silverbrane is an amazing Machine Learning product developed by an amazing team at SilverPond which combines optimised expert-driven tooling with AI, which in brief does this:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/silverbrane.png&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
+
+&lt;h1&gt;Project 1:&lt;/h1&gt;
+
+&lt;p&gt;My first project was “Server provisioning in Silverbrane”. I had to provision the server to automatically spin the workers to start training the model, which was previously a manual process.&lt;/p&gt;
+
+&lt;p&gt;By the end of it, I learnt about:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Managing AWS ec2 instances using console&lt;/li&gt;
+&lt;li&gt;Managing AWS ec2 instances using programming (using aws-sdk for ruby)&lt;/li&gt;
+&lt;li&gt;How Ruby on Rails project is structured&lt;/li&gt;
+&lt;li&gt;Finding my way inside a rails project (Though I still don’t understand Rails or Ruby much!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1&gt;Project 2:&lt;/h1&gt;
+
+&lt;p&gt;At the moment, I am working on an another project in which we “Count the number of cars in overhead imagery with deep learning”. This project tries to replicate the results presented in this paper: Mundhenk et al. 2016&lt;/p&gt;
+
+&lt;p&gt;Vehicle localization from satellite imagery has myriad use cases in the commercial, national security, and humanitarian realms. On the commercial front, a number of companies have attempted to infer retail traffic from parking lot density levels, and tracking delivery trucks in near real-time is one of the far-field goals of satellite imagery analytics. In the realm of national security, detecting the buildup of war materiel in unstable regions would provide obvious value, as would locating convoys of vehicles vectored towards unmanned border crossings, or identifying a large number of vehicles staging just outside the range of terrestrial border monitoring equipment. On the humanitarian front, one might attempt to infer the scope of natural disasters from clusters (or absences) of vehicles, or determine optimal travel routes for disaster relief in unknown areas based on observations of local vehicle movements.
+Dataset&lt;/p&gt;
+
+&lt;p&gt;The dataset consists of large number of unique cars (~33,000) from six different imagesets, where each imageset has more than 60,000 images. Each imageset covers a different geographical location and produced by different imagers and has different training and test sets. The regions are Toronto Canada, Selwyn New Zealand, Potsdam &amp;amp; Vaihingen Germany, Columbus &amp;amp; Utah United States. Data is collected via aerial platforms, but at a view angle such that it resembles satellite imagery. The imagery has a resolution of 15 cm ground sample distance (GSD) that is approximately twice as good as the current best resolution of commercial satellite imagery.
+Dataset consists of images like these:&lt;/p&gt;
+
+&lt;h2&gt;Approach:&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I started by using inception model to classify the images, though it is not really good at classifying correctly, since it is a baseline model. I downloaded a pre-trained inception model, since it takes weeks to train on a monster computer with 8 Tesla K40 GPUs costing ~$30,000 so it is impossible to train it on an ordinary PC.&lt;/li&gt;
+&lt;li&gt;I trained the model by logistic regression using scikit-learn. It is a multi way classification where we have 64 classes (the maximum number of cars that are in any image/patch is 64).&lt;/li&gt;
+&lt;li&gt;I took the training and test set together and later split it.&lt;/li&gt;
+&lt;li&gt;With close to 1 million images, the accuracy achieved was ~55%.&lt;/li&gt;
+&lt;li&gt;But if all the images from training and test set is taken it would take approx. 2 days to train the model.&lt;/li&gt;
+&lt;li&gt;So,I trained the model by logistic regression using Tensorflow, where I took the image in batches (say, 50).&lt;/li&gt;
+&lt;li&gt;With close to 40,000 images, The accuracy achieved was ~48%.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;But the methodology mentioned in the paper is able to achieve an accuracy of ~80%.&lt;/p&gt;
+
+&lt;h2&gt;How may we increase the accuracy? ( Have to try these out, once I do, I will update the post)&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Instead of inception model, use a different model, like Resception, Mundhek et al. 2016&lt;/li&gt;
+&lt;li&gt;Reserve the Utah region (both training and test) for training purposes as it differs significantly in car density, building architecture, &amp;amp; vegetation patterns from regions in Germany, New Zealand, and Canada, hence provides a rigorous training case.&lt;/li&gt;
+&lt;li&gt;Run on the validation set provided by the authors of the paper.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;By the end of the internship, I expect to...&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Get intermediate experience with deep learning frameworks like tensorflow &amp;amp; pytorch and machine learning libraries like scikit-learn.&lt;/li&gt;
+&lt;li&gt;Get more familiar with various deep learning approaches.&lt;/li&gt;
+&lt;li&gt;Be proficient in skimming through research papers and apply the methodologies to practical projects (Because reading research papers is so damn boring!).&lt;/li&gt;
+&lt;li&gt;Build a foundation to become a machine learning engineer after my graduation!&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I will update the code on Github as well once I complete the project.&lt;/p&gt;
+
+&lt;p&gt;This is me giving the talk :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image4.jpeg&quot; alt=&quot;meetup&quot;&gt;&lt;/p&gt;
+
+&lt;p&gt;I gave this talk at the Melbourne MLAI meetup. This is the Meetup &lt;a href=&quot;https://www.meetup.com/Machine-Learning-AI-Meetup/events/242581813/?gj=co2&amp;amp;rv=co2&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Hope you enjoyed it! :)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Keep Calm and go to Code Camp!</title>
@@ -23,9 +104,9 @@
 
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/4.jpg&quot; alt=&quot;pizzeria hde4&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/2.jpeg&quot; alt=&quot;pizzeria hde2&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image2.jpeg&quot; alt=&quot;pizzeria hde2&quot;&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/3.jpeg&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image3.jpeg&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is. The classes are divided into 4 groups:&lt;/p&gt;
 

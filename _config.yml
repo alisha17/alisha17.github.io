@@ -3,11 +3,10 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
 
 # Setup
 title:            Alisha Aneja
-tagline:          'Welcome to my world!'
+tagline:          'Welcome'
 description:      'Programmer by Profession, Explorer by Heart <3'
 url:              http://alisha17.github.io
 
@@ -20,7 +19,7 @@ author:
   linkedin:       'https://www.linkedin.com/in/alisha-aneja-509252128/'
   wordpress:      'https://mealisha.wordpress.com/'
 
-paginate:         3
+paginate:         5
 
 # Custom vars
 version:          2.1.0

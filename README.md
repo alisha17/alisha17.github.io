@@ -1,5 +1,5 @@
-Yet to add the README!
+* alisha17.github.io
 
-The blog posts are just samples. They are not mine.
+This is my personal website and blog.
 
-This site uses Poole Hyde theme.
+Head over to http://alisha17.github.io

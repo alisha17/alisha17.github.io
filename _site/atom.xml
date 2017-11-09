@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-10T07:42:48+11:00</updated>
+ <updated>2017-11-10T08:01:52+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -18,82 +18,6 @@
    <updated>2017-10-18T00:00:00+11:00</updated>
    <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
    <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt;
-
-&lt;p&gt;I spent initial few weeks getting familiar with Silverbrane. Silverbrane is an amazing Machine Learning product developed by an amazing team at SilverPond which combines optimised expert-driven tooling with AI, which in brief does this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/silverbrane.png&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
-
-&lt;h1&gt;Project 1:&lt;/h1&gt;
-
-&lt;p&gt;My first project was “Server provisioning in Silverbrane”. I had to provision the server to automatically spin the workers to start training the model, which was previously a manual process.&lt;/p&gt;
-
-&lt;p&gt;By the end of it, I learnt about:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Managing AWS ec2 instances using console&lt;/li&gt;
-&lt;li&gt;Managing AWS ec2 instances using programming (using aws-sdk for ruby)&lt;/li&gt;
-&lt;li&gt;How Ruby on Rails project is structured&lt;/li&gt;
-&lt;li&gt;Finding my way inside a rails project (Though I still don’t understand Rails or Ruby much!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1&gt;Project 2:&lt;/h1&gt;
-
-&lt;p&gt;At the moment, I am working on an another project in which we “Count the number of cars in overhead imagery with deep learning”. This project tries to replicate the results presented in this paper: &lt;a href=&quot;https://gdo-datasci.ucllnl.org/cowc/mundhenk_et_al_eccv_2016.pdf&quot;&gt;Mundhenk et al. 2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Vehicle localization from satellite imagery has myriad use cases in the commercial, national security, and humanitarian realms. On the commercial front, a number of companies have attempted to infer retail traffic from parking lot density levels, and tracking delivery trucks in near real-time is one of the far-field goals of satellite imagery analytics. In the realm of national security, detecting the buildup of war materiel in unstable regions would provide obvious value, as would locating convoys of vehicles vectored towards unmanned border crossings, or identifying a large number of vehicles staging just outside the range of terrestrial border monitoring equipment. On the humanitarian front, one might attempt to infer the scope of natural disasters from clusters (or absences) of vehicles, or determine optimal travel routes for disaster relief in unknown areas based on observations of local vehicle movements.
-Dataset&lt;/p&gt;
-
-&lt;p&gt;The dataset consists of large number of unique cars (~33,000) from six different imagesets, where each imageset has more than 60,000 images. Each imageset covers a different geographical location and produced by different imagers and has different training and test sets. The regions are Toronto Canada, Selwyn New Zealand, Potsdam &amp;amp; Vaihingen Germany, Columbus &amp;amp; Utah United States. Data is collected via aerial platforms, but at a view angle such that it resembles satellite imagery. The imagery has a resolution of 15 cm ground sample distance (GSD) that is approximately twice as good as the current best resolution of commercial satellite imagery.&lt;/p&gt;
-
-&lt;p&gt;Dataset consists of images like these:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/null1.png&quot; alt=&quot;pizzeria hde3&quot;&gt;
-&lt;img src=&quot;http://localhost:4000/assets/null3.png&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
-
-&lt;h2&gt;Approach:&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;I started by using inception model to classify the images, though it is not really good at classifying correctly, since it is a baseline model. I downloaded a pre-trained inception model, since it takes weeks to train on a monster computer with 8 Tesla K40 GPUs costing ~$30,000 so it is impossible to train it on an ordinary PC.&lt;/li&gt;
-&lt;li&gt;I trained the model by logistic regression using scikit-learn. It is a multi way classification where we have 64 classes (the maximum number of cars that are in any image/patch is 64).&lt;/li&gt;
-&lt;li&gt;I took the training and test set together and later split it.&lt;/li&gt;
-&lt;li&gt;With close to 1 million images, the accuracy achieved was ~55%.&lt;/li&gt;
-&lt;li&gt;But if all the images from training and test set is taken it would take approx. 2 days to train the model.&lt;/li&gt;
-&lt;li&gt;So,I trained the model by logistic regression using Tensorflow, where I took the image in batches (say, 50).&lt;/li&gt;
-&lt;li&gt;With close to 40,000 images, The accuracy achieved was ~48%.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But the methodology mentioned in the paper is able to achieve an accuracy of ~80%.&lt;/p&gt;
-
-&lt;h2&gt;How may we increase the accuracy? ( Have to try these out, once I do, I will update the post)&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Instead of inception model, use a different model, like Resception, Mundhek et al. 2016&lt;/li&gt;
-&lt;li&gt;Reserve the Utah region (both training and test) for training purposes as it differs significantly in car density, building architecture, &amp;amp; vegetation patterns from regions in Germany, New Zealand, and Canada, hence provides a rigorous training case.&lt;/li&gt;
-&lt;li&gt;Run on the validation set provided by the authors of the paper.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;By the end of the internship, I expect to...&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Get intermediate experience with deep learning frameworks like tensorflow &amp;amp; pytorch and machine learning libraries like scikit-learn.&lt;/li&gt;
-&lt;li&gt;Get more familiar with various deep learning approaches.&lt;/li&gt;
-&lt;li&gt;Be proficient in skimming through research papers and apply the methodologies to practical projects (Because reading research papers is so damn boring!).&lt;/li&gt;
-&lt;li&gt;Build a foundation to become a machine learning engineer after my graduation!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I will update the code on Github as well once I complete the project.&lt;/p&gt;
-
-&lt;p&gt;This is me giving the talk :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image4.jpeg&quot; alt=&quot;meetup&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;I gave this talk at the Melbourne MLAI meetup. This is the Meetup &lt;a href=&quot;https://www.meetup.com/Machine-Learning-AI-Meetup/events/242581813/?gj=co2&amp;amp;rv=co2&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;And....This is me at SilverPond :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image1.jpeg&quot; alt=&quot;pizzer&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Hope you enjoyed it! :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -103,51 +27,6 @@ Dataset&lt;/p&gt;
    <updated>2017-10-04T00:00:00+11:00</updated>
    <id>http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails</id>
    <content type="html">&lt;p&gt;I am working on a Ruby on Rails project in my organization and I am very new to Rails. It took me days to find a way for creating custom buttons and their methods alongside the default &amp;#39;Edit, View, Delete .....&amp;#39; buttons.&lt;/p&gt;
-
-&lt;p&gt;I finally found a fix to this and I concluded that Rails does really magical stuff behind the scenes which isn&amp;#39;t obvious to a new programmer.&lt;/p&gt;
-
-&lt;p&gt;So, to give an overview of my task -- I am working on creating an &amp;#39;Instances&amp;#39; tab on the ActiveAdmin index page. This instance page will list all of the current available AWS EC2 instances, and a link to VIEW, EDIT, DELETE (already available ones), STOP and REBOOT (custom ones, which I needed to make).&lt;/p&gt;
-
-&lt;p&gt;This is how my page looks after adding the custom links:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/ruby.png&quot; alt=&quot;pizze&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;Oh and I removed the &amp;#39;EDIT&amp;#39; link, I will show this as well. This one is pretty straighforward though.&lt;/p&gt;
-
-&lt;p&gt;So for adding the custom links:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;index&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;selectable_column&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;id_column&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:image_id&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:min_count&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:max_count&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;column&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:monitoring&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link_to&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Stop&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;stop_admin_instance_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;column&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;|&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;link_to&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;Reboot&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;We are creating these links in the seperate columns, with the name &amp;#39;Stop&amp;#39;, redirect path as &amp;quot;/admin/instances/stop&amp;quot;, which Rails already has a helper for, nameOfMethod&lt;em&gt;admin&lt;/em&gt;pageName&lt;em&gt;path(your&lt;/em&gt;record), and the request method (GET/POST/PUT/DELETE). Similarly, it goes for &amp;#39;Reboot&amp;#39; a well. To check this helper route, run rake routes from the console.&lt;/p&gt;
-
-&lt;p&gt;Now, we will add the method for stop button, which goes like this:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;member_action&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:stop&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;method&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:post&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-       &lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;find&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;params&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-       &lt;span class=&quot;no&quot;&gt;AwsService&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stop_ec2_instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;instance_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-       &lt;span class=&quot;n&quot;&gt;redirect_to&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;/admin/instances/&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;I have made an AWS Service to stop the instances, using aws-ruby sdk, but that&amp;#39;s out of the scope of this post.&lt;/p&gt;
-
-&lt;p&gt;params(:id) will send the id of the record on which this method would be called, to the find method, to find this record from the table and then the further instructions will be carried out on the record.&lt;/p&gt;
-
-&lt;p&gt;And to remove the default edit link, I did as follows:&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;controller&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;actions&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:except&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:edit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;Basically, in the controller section, you specify that all actions take place except the edit one&amp;#39;. If you wanted to remove, for example, delete action, you would just have to add delete similarly as the edit action.&lt;/p&gt;
-
-&lt;p&gt;I hope this would help someone :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -157,68 +36,6 @@ Dataset&lt;/p&gt;
    <updated>2017-09-29T00:00:00+10:00</updated>
    <id>http://localhost:4000/code%20camp/2017/09/29/codecamp</id>
    <content type="html">&lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is.&lt;/p&gt;
-
-&lt;p&gt;Now some pictures!&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/1.jpg&quot; alt=&quot;pizzeria hde1&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/4.jpg&quot; alt=&quot;pizzeria hde4&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image2.jpeg&quot; alt=&quot;pizzeria hde2&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image3.jpeg&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;The classes are divided into 4 groups:&lt;/p&gt;
-
-&lt;h2&gt;Little League&lt;/h2&gt;
-
-&lt;p&gt;This group is for kids aged between 5 - 6 or who are in grades K - 1 and who have no idea of what coding is.  Each Little League camp comes equipped with iPads for the whole class to enjoy. The kids build awesome mini-games and learn about coding in the process. This group is a combination of online and offline activities. For more info, check here: &lt;a href=&quot;https://codecamp.com.au/camp-league/&quot;&gt;Little-league&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Spark&lt;/h2&gt;
-
-&lt;p&gt;This group is for kids aged between 7 - 12 or who are in grades 2 - 6 with beginner&amp;#39;s knowledge and are ready to hop on to intermediate stage. This is the most popular group. They make their own mobile phone game playable via the Code Camp App (which can be downloaded on Apple and Android phones). The kids get a taste of real world coding by doing &amp;#39;Drag and Drop&amp;#39; coding using the proprietory software &amp;#39;Code Camp World&amp;#39;. This is even accessible after the camp ends, so they can practice and have fun at home too, taking help from the video tutorials! For more info, check here: &lt;a href=&quot;https://codecamp.com.au/camp-spark/&quot;&gt;spark&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Ignite&lt;/h2&gt;
-
-&lt;p&gt;This group is for kids aged between 7 - 12 or who are in grades 2 - 6 with intermediate knowledge and are ready to hop on to advanced stage. They make their own mobile phone game playable via the Code Camp App (which can be downloaded on Apple and Android phones). The kids get a taste of real world coding by doing advanced &amp;#39;Drag and Drop&amp;#39; coding and line coding using Javascript on the last day of the camp using the proprietory software &amp;#39;Code Camp World&amp;#39;. This is even accessible after the camp ends, so they can practice and have fun at home too, taking help from the video tutorials! For more info, check here: &lt;a href=&quot;https://codecamp.com.au/camp-ignite/&quot;&gt;ignite&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2&gt;Blast&lt;/h2&gt;
-
-&lt;p&gt;This group is for kids aged between 8 - 13 or who are in grades 3 - 7 and have completed the Spark and Ignite. This is for advanced students only as they learn coding in pure Javascript. They make their own mobile phone game playable via the Code Camp App (which can be downloaded on Apple and Android phones), using line coding in pure Javascript. For more info, check here: &lt;a href=&quot;https://codecamp.com.au/camp-blast/&quot;&gt;blast&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;/br&gt;&lt;/p&gt;
-
-&lt;p&gt;Each class has a staff of atleast three people, including head teacher and teaching assistants. Each camp has atleast two camp managers and a first aid practitioner.&lt;/p&gt;
-
-&lt;p&gt;I was a teaching assistant for the Ignite group in the camp conducted at University of Melbourne during the spring holidays 2017. There was a Code Camp meet and greet two weeks before the camp to prepare the staff for their respective roles. There was a party as well, so that the staff can know each other well. I didn&amp;#39;t go, so I can&amp;#39;t elaborate on how it was :P&lt;/p&gt;
-
-&lt;p&gt;It was a three day camp, and I had a lot of fun. I love kids, I love teaching and I love coding (obviously, being a software programmer myself!). It is a very fulfilling role, where you know you are building the foundation for technologists of the future. I saw the amazed look on people&amp;#39;s face due to the response they got for the question &amp;#39;what the camp is for&amp;#39;, keeping in mind that all kids were of age group 5 - 13, with average age being 9.&lt;/p&gt;
-
-&lt;p&gt;The timings for the camp were 9 am - 3.30 pm.&lt;/p&gt;
-
-&lt;p&gt;On the first day, all the kids were provided with a Code Camp t-shirt and a hat. As far as learning is concerned, they learnt Drag and Drop coding in the Code Camp World software, where they could keep practicing at home as well. There were two breaks in between, a recess and a lunch break so that the kids can have some outdoor time and get refreshed. The day ended with a cheerful note, with all the kids being happy about the exciting things they learnt during the day.&lt;/p&gt;
-
-&lt;p&gt;On the second day, the kids were taught about some advanced concepts in Drag and Drop coding like logic, UI, Math functions etc. They made many mini games inside the main game using these concepts.&lt;/p&gt;
-
-&lt;p&gt;On the third and the last day, they finished their mini games using Drag and Drop and made another mini game using line coding only, i.e. using Javascript. An unexpected observation was that the kids found line coding more fun and easier than the Drag and Drop coding (i.e. Block Coding)! During the lunch break, there was a silent disco party where all the teachers and kids were provided with headphones playing some great classic party tracks ;) All the games were published by 3 pm on the Code Camp portal and the students showcased their games and even challenged their friends to complete various levels in their games. The games can be accessed from the Code Camp app. Each kid gets a code and using that code, one can find his/her game in the app. Here is an example screenshot for the same:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/5.png&quot; alt=&quot;pizzeria hde5&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;At the end of the day, everyone had mixed feelings, as it was an exciting experience but saying goodbyes is always the hardest part.&lt;/p&gt;
-
-&lt;p&gt;Here are some screenshots of the games made by the kids during the camp:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/6.png&quot; alt=&quot;pizzeria hde5&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/7.png&quot; alt=&quot;pizzeria hde6&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/8.png&quot; alt=&quot;pizzeria hde7&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/9.png&quot; alt=&quot;pizzeria hde8&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/10.png&quot; alt=&quot;pizzeria hde9&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;I hope you enjoyed reading the post. Thanks! Tada! :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -297,18 +114,6 @@ Dataset&lt;/p&gt;
    <updated>2017-08-27T00:00:00+10:00</updated>
    <id>http://localhost:4000/silverpond/2017/08/27/first-week</id>
    <content type="html">&lt;p&gt;I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.&lt;/p&gt;
-
-&lt;p&gt;SilverPond is a team of data scientists, machine learning specialists, software engineers and mathematicians who design solutions to hard problems. For over 13 years, they have developed big data and software solutions for clients in various industries ranging from utilities, retail, and technology, to healthcare, education and research like Australia Post and 7-11. They are also actively involved in sharing knowledge about Artificial Intelligence, Machine Learning, and various other technologies by hosting meetups and conferences. &lt;a href=&quot;http://www.composeconference.org/&quot;&gt;Compose:: Melbourne&lt;/a&gt; (Functional Programming Conference) is supported and managed by SilverPond its team members. They are also holding a 2-day Deep Learning Workshop on 5th and 6th Dec&amp;#39;17. The curriculum looks pretty interesting for anyone who would like to supplement their Data Science learning. The details can be found here: &lt;a href=&quot;https://www.eventbrite.com/e/deep-learning-2-day-workshop-december-tickets-36675083161?aff=erellivmlt&quot;&gt;Deep Learning Workshop&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;My first day involved creating accounts across various mediums that Silverpond uses for collaboration like Asana (just like Trello), Slack, Gitlab and conventional email account and setting up the in-house project, Silverbrane. While setting up, some issues cropped up but eventually I resolved it and added these in the documentation. But it&amp;#39;s technology stack involves Ruby on Rails, in which I am not really proficient, so my first step involved getting familiar with the main functioning of the project and Ruby (of course!).&lt;/p&gt;
-
-&lt;p&gt;The next day I found some bugs in Silverbrane and picked up one to resolve which I did but now I am struggling with fixing test for it in RSpec (which I hope to resolve soon).&lt;/p&gt;
-
-&lt;p&gt;Every team member at SilverPond was very welcoming and made sure that I felt at ease on the very first day.&lt;/p&gt;
-
-&lt;p&gt;Next week would be interesting because I hope to dive into a bit of Machine Learning part of the Silverbrane. Also, I would be volunteering for the Compose:: Melbourne (28th-29th Aug&amp;#39;17), which would be surely an enriching experience.&lt;/p&gt;
-
-&lt;p&gt;I would share my second week internship experience and the highlights of Compose:: Melbourne soon! :)&lt;/p&gt;
 </content>
  </entry>
  

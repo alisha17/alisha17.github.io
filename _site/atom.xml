@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-09T02:05:06+11:00</updated>
+ <updated>2017-11-10T07:42:48+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -18,10 +18,6 @@
    <updated>2017-10-18T00:00:00+11:00</updated>
    <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
    <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt;
-
-&lt;p&gt;This is me at SilverPond :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image1.jpeg&quot; alt=&quot;pizzer&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;I spent initial few weeks getting familiar with Silverbrane. Silverbrane is an amazing Machine Learning product developed by an amazing team at SilverPond which combines optimised expert-driven tooling with AI, which in brief does this:&lt;/p&gt;
 
@@ -92,6 +88,10 @@ Dataset&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image4.jpeg&quot; alt=&quot;meetup&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;I gave this talk at the Melbourne MLAI meetup. This is the Meetup &lt;a href=&quot;https://www.meetup.com/Machine-Learning-AI-Meetup/events/242581813/?gj=co2&amp;amp;rv=co2&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And....This is me at SilverPond :)&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image1.jpeg&quot; alt=&quot;pizzer&quot;&gt;&lt;/p&gt;
 
 &lt;p&gt;Hope you enjoyed it! :)&lt;/p&gt;
 </content>

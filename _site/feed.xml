@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Alisha Aneja</title>
+ <link href="http://localhost:4000/feed.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-11-10T08:18:09+11:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name>Alisha Aneja</name>
+   <email>anejaalisha37@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>[MLAI Meetup Talk] My Experience as a Machine Learning Intern</title>
+   <link href="http://localhost:4000/silverpond/2017/10/18/mlai.html"/>
+   <updated>2017-10-18T00:00:00+11:00</updated>
+   <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
+   <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Custom Links within ActiveAdmin Pages - Ruby on Rails</title>
+   <link href="http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails.html"/>
+   <updated>2017-10-04T00:00:00+11:00</updated>
+   <id>http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails</id>
+   <content type="html">&lt;p&gt;I am working on a Ruby on Rails project in my organization and I am very new to Rails. It took me days to find a way for creating custom buttons and their methods alongside the default &amp;#39;Edit, View, Delete .....&amp;#39; buttons.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Keep Calm and go to Code Camp!</title>
+   <link href="http://localhost:4000/code%20camp/2017/09/29/codecamp.html"/>
+   <updated>2017-09-29T00:00:00+10:00</updated>
+   <id>http://localhost:4000/code%20camp/2017/09/29/codecamp</id>
+   <content type="html">&lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Interview Experience with HDE Inc.</title>
+   <link href="http://localhost:4000/hde/2017/09/02/hde-interview.html"/>
+   <updated>2017-09-02T00:00:00+10:00</updated>
+   <id>http://localhost:4000/hde/2017/09/02/hde-interview</id>
+   <content type="html">&lt;p&gt;HDE Inc. is a Japanese Cloud Security Provider established in 1996 and their Global Internship Program (GIP) has become very popular in recent times.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Some benefits of this internship:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Up to 150,000 JPY/month subsidy. The subsidy is given to cover living costs such as meals, commuting expense, and accommodation.&lt;/li&gt;
+&lt;li&gt;Round-trip airfares coverage&lt;/li&gt;
+&lt;li&gt;Medical insurance&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;For more info, refer this link: &lt;a href=&quot;https://www.hde.co.jp/en/gip/&quot;&gt;HDE GIP&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;The process was as follows: (as of June 2017)&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Programming Test&lt;/li&gt;
+&lt;li&gt;Online Interview&lt;/li&gt;
+&lt;li&gt;Offer Letter (if successful!)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Let&amp;#39;s have a look at all these components one by one:&lt;/p&gt;
+
+&lt;h2&gt;PROGRAMMING TEST&lt;/h2&gt;
+
+&lt;p&gt;The programming test involved writing a program in Golang, which was not exactly easy. It required some thinking because I found Golang a very limited language as compared to Python (I have mostly programmed in Python).&lt;/p&gt;
+
+&lt;p&gt;To send this program to HDE, it involved writing another program for which I had to go through technical RFC documentations (to do authentication and generate password etc.).&lt;/p&gt;
+
+&lt;p&gt;In the end,  I had to make use of requests and HTTP to actually hit the HDE&amp;#39;s API to send them the program. The program had to be written in a private gist (so knowledge of Github is essential).&lt;/p&gt;
+
+&lt;p&gt;DO NOT CHEAT. Because even if you are successful at this stage, at the next stage you will be eliminated if you cheat because in the interview they actually ask questions about the program.&lt;/p&gt;
+
+&lt;p&gt;I succeeded in the programming test!&lt;/p&gt;
+
+&lt;p&gt;I was informed about the schedule of the online interview within 2 weeks.&lt;/p&gt;
+
+&lt;h2&gt;ONLINE INTERVIEW&lt;/h2&gt;
+
+&lt;p&gt;The online interview was conducted on Skype. It was more like a behavioral one. There were three interviewers and all were very friendly. We even talked about sushis!&lt;/p&gt;
+
+&lt;p&gt;They asked questions about some open source projects of mine, challenges that I faced while programming and general questions about my willingness to travel to Japan and University subjects etc.&lt;/p&gt;
+
+&lt;p&gt;Just be yourself, don&amp;#39;t be nervous, answer questions honestly. If you don&amp;#39;t know something, say &amp;#39;no&amp;#39; straight away.&lt;/p&gt;
+
+&lt;p&gt;P.S.- It will be good if you know Python or Golang because their projects are mostly in these technologies.&lt;/p&gt;
+
+&lt;h2&gt;OFFER LETTER&lt;/h2&gt;
+
+&lt;p&gt;I received the offer letter within two weeks. I had to choose an internship slot. The department is Cloud Product Development Division.&lt;/p&gt;
+
+&lt;p&gt;Each internship slot is approximately of 6 weeks, and this program runs all year round. A candidate is free to select any time frame which suits him/her.&lt;/p&gt;
+
+&lt;p&gt;The HR was cooperative as well.&lt;/p&gt;
+
+&lt;p&gt;Overall, it was a smooth experience.&lt;/p&gt;
+
+&lt;p&gt;Will update my internship experience once I start. There&amp;#39;s still time in it. :P&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;EDIT : HDE team visited Melbourne and we had a nice dinner at +39 Pizzeria on 14th Sept&amp;#39;17. It was an informal meeting and the peeps from HDE were so friendly. I didn&amp;#39;t feel even for a second that I was meeting them for the first time. We clicked some pics as well, though not really high quality ones but yeah, manageable!&lt;/em&gt; :P&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/IMG_3324.JPG&quot; alt=&quot;pizzeria hde&quot;&gt;&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>First Week of Machine Learning Internship at SilverPond</title>
+   <link href="http://localhost:4000/silverpond/2017/08/27/first-week.html"/>
+   <updated>2017-08-27T00:00:00+10:00</updated>
+   <id>http://localhost:4000/silverpond/2017/08/27/first-week</id>
+   <content type="html">&lt;p&gt;I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>

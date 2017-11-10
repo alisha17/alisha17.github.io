@@ -20,5 +20,5 @@ I help children and women by mentoring them, who want to learn coding. Hence, I 
 This is me :)
 
 {% raw %}
- <img src="/assets/me.jpeg" height="750" width="700">
+ <img src="/assets/me.jpeg" alt="Drawing" height="750" width="700">
 {% endraw %}

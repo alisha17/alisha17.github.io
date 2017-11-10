@@ -429,11 +429,6 @@ a.pagination-item:hover {
   }
 }
 
-/*img[alt="alisha"] {
-  height: 1024px;
-  width: 958px;
-}*/
-
 img[alt="pizzer"] {
   height: 600px;
   width: 680px;
@@ -442,4 +437,11 @@ img[alt="pizzer"] {
 img[alt="meetup"] {
   height: 600px;
   width: 750px;
+}
+
+img[alt="ml"] {
+  display: block;
+  margin: 30px;
+  height: 300px;
+  width: 500px;
 }

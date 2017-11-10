@@ -5,7 +5,7 @@ categories: [Silverpond]
 comments: true
 ---
 
-![ml]({{ site.url }}/assets/data_science.jpg)
+![ml]({{ site.url }}/assets/Silverpond11.jpg)
 
 I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.
 

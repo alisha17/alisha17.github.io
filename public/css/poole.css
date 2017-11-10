@@ -428,3 +428,18 @@ a.pagination-item:hover {
     border-bottom-right-radius: 4px;
   }
 }
+
+/*img[alt="alisha"] {
+  height: 1024px;
+  width: 958px;
+}*/
+
+img[alt="pizzer"] {
+  height: 600px;
+  width: 680px;
+}
+
+img[alt="meetup"] {
+  height: 600px;
+  width: 750px;
+}

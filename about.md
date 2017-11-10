@@ -19,4 +19,4 @@ I help children and women by mentoring them, who want to learn coding. Hence, I 
 
 This is me :)
 
-![alisha]({{ site.url }}/assets/me.jpeg)
+![alisha]({{ site.url }}/assets/alisha.jpeg)

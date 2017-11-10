@@ -4,13 +4,29 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/silverpond.feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-10T08:18:09+11:00</updated>
+ <updated>2017-11-10T11:55:21+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
    <email>anejaalisha37@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>[MLAI Meetup Talk] My Experience as a Machine Learning Intern</title>
+   <link href="http://localhost:4000/silverpond/2017/10/18/mlai.html"/>
+   <updated>2017-10-18T00:00:00+11:00</updated>
+   <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
+   <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt; &lt;p&gt;I spent initial few weeks getting familiar with Silverbrane. Silverbrane is an amazing Machine Learning product developed by an amazing team at SilverPond which combines optimised expert-driven tooling with AI, which in brief does this:&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/silverbrane.png&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt; &lt;h1&gt;Project 1:&lt;/h1&gt; &lt;p&gt;My first project was “Server provisioning...</content>
+ </entry>
+ 
+ <entry>
+   <title>First Week of Machine Learning Internship at SilverPond</title>
+   <link href="http://localhost:4000/silverpond/2017/08/27/first-week.html"/>
+   <updated>2017-08-27T00:00:00+10:00</updated>
+   <id>http://localhost:4000/silverpond/2017/08/27/first-week</id>
+   <content type="html">&lt;p&gt;I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.&lt;/p&gt; &lt;p&gt;SilverPond is a team of data scientists, machine learning specialists, software engineers and mathematicians who design solutions to hard problems. For over 13 years, they have...</content>
+ </entry>
  
 
 </feed>

@@ -17,7 +17,7 @@ I am also working with Fedora's 389-Directory Server.
 
 I help children and women by mentoring them, who want to learn coding. Hence, I am involved with [Code Camp](https://alisha17.github.io/code%20camp/2017/09/29/codecamp.html) and DjangoGirls workshops.
 
-This is me :)
+This is me feeding the kangaroo :)
 
-![alisha]({{ site.url }}/assets/image10.png)
+![alisha]({{ site.url }}/assets/image1.png)
 

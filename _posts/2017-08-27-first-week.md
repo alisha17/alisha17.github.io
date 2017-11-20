@@ -1,7 +1,7 @@
 ---
 layout: post
 title: First Week of Machine Learning Internship at SilverPond
-categories: [Silverpond, Machine Learning]
+categories: [Silverpond]
 comments: true
 ---
 

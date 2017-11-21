@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-20T15:49:45+11:00</updated>
+ <updated>2017-11-21T12:03:00+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -17,7 +17,7 @@
    <link href="http://localhost:4000/machine-learning/2017/11/20/pyladies.html"/>
    <updated>2017-11-20T00:00:00+11:00</updated>
    <id>http://localhost:4000/machine-learning/2017/11/20/pyladies</id>
-   <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on Monday, 20th November&amp;#39;17. I initially planned to discuss about my deep learning project &amp;#39;Count the number of cars in overhead imagery&amp;#39; (discussed here: &lt;a href=&quot;https://alisha17.github.io/silverpond/2017/10/18/mlai.html&quot;&gt;link&lt;/a&gt;) which I am doing in my Machine Learning internship, but then I thought maybe not everyone at the meetup would be...</content>
+   <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on Monday, 20th November&amp;#39;17. I initially planned to discuss about my deep learning project &amp;#39;Count the number of cars in overhead imagery (discussed here: &lt;a href=&quot;https://alisha17.github.io/silverpond/2017/10/18/mlai.html&quot;&gt;link&lt;/a&gt;) which I am doing in my internship, but then I thought maybe not everyone at the meetup would be familiar with...</content>
  </entry>
  
  <entry>

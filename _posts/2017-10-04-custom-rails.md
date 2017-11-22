@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Custom Links within ActiveAdmin Pages - Ruby on Rails"
-categories: [Ruby on Rails]
+categories: ['Ruby-on-Rails']
 comments: true
 ---
 

@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-21T12:13:25+11:00</updated>
+ <updated>2017-11-23T11:12:07+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -17,7 +17,7 @@
    <link href="http://localhost:4000/machine-learning/2017/11/20/pyladies.html"/>
    <updated>2017-11-20T00:00:00+11:00</updated>
    <id>http://localhost:4000/machine-learning/2017/11/20/pyladies</id>
-   <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on Monday, 20th November&amp;#39;17. I initially planned to discuss about my deep learning project &amp;#39;Count the number of cars in overhead imagery (discussed here: &lt;a href=&quot;https://alisha17.github.io/silverpond/2017/10/18/mlai.html&quot;&gt;link&lt;/a&gt;) which I am doing in my internship, but then I thought maybe not everyone at the meetup would be familiar with...</content>
+   <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on Monday, 20th November&amp;#39;17. &lt;/p&gt; &lt;p&gt;I discussed what is Machine Learning, the common methods and evaluation metrics. If you are a complete beginner to machine learning, this talk is for you. Here is the &lt;a href=&quot;http://localhost:4000/assets/introml.pdf&quot;&gt;PDF&lt;/a&gt; of the talk. &lt;/p&gt; &lt;p&gt;Also, following are the pdfs of my...</content>
  </entry>
  
  <entry>
@@ -38,17 +38,17 @@
  
  <entry>
    <title>Custom Links within ActiveAdmin Pages - Ruby on Rails</title>
-   <link href="http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails.html"/>
+   <link href="http://localhost:4000/ruby-on-rails/2017/10/04/custom-rails.html"/>
    <updated>2017-10-04T00:00:00+11:00</updated>
-   <id>http://localhost:4000/ruby%20on%20rails/2017/10/04/custom-rails</id>
+   <id>http://localhost:4000/ruby-on-rails/2017/10/04/custom-rails</id>
    <content type="html">&lt;p&gt;I am working on a Ruby on Rails project in my organization and I am very new to Rails. It took me days to find a way for creating custom buttons and their methods alongside the default &amp;#39;Edit, View, Delete .....&amp;#39; buttons.&lt;/p&gt; &lt;p&gt;I finally found a fix to this and I concluded that Rails does really magical stuff behind the...</content>
  </entry>
  
  <entry>
    <title>Keep Calm and go to Code Camp!</title>
-   <link href="http://localhost:4000/codecamp/2017/09/29/codecamp.html"/>
+   <link href="http://localhost:4000/code-camp/2017/09/29/codecamp.html"/>
    <updated>2017-09-29T00:00:00+10:00</updated>
-   <id>http://localhost:4000/codecamp/2017/09/29/codecamp</id>
+   <id>http://localhost:4000/code-camp/2017/09/29/codecamp</id>
    <content type="html">&lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is.&lt;/p&gt; &lt;p&gt;Now some pictures!&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/1.jpg&quot; alt=&quot;pizzeria hde1&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/4.jpg&quot; alt=&quot;pizzeria hde4&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image2.jpeg&quot; alt=&quot;pizzeria hde2&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image3.jpeg&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt; &lt;p&gt;The classes are divided into 4 groups:&lt;/p&gt; &lt;h2&gt;Little League&lt;/h2&gt; &lt;p&gt;This group is for kids...</content>
  </entry>
  

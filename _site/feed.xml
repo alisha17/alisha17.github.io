@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-27T16:53:22+11:00</updated>
+ <updated>2017-11-27T17:29:27+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -18,6 +18,14 @@
    <updated>2017-11-25T00:00:00+11:00</updated>
    <id>http://localhost:4000/ldap/2017/11/25/ldapconcepts</id>
    <content type="html">&lt;p&gt;When I started to look into the Fedora’s 389 Directory Server, my first concern was understanding LDAP glossary!&lt;/p&gt; &lt;p&gt;I did a project of Single Sign-On and Password Authentication using LDAP as the database during my internship in the last year of undergraduation, 2+ years back (time literally flies!), but to be honest, I didn’t really understand much at that time.&lt;/p&gt;...</content>
+ </entry>
+ 
+ <entry>
+   <title>Parsing Windows event log files (.evtx) using Python</title>
+   <link href="http://localhost:4000/python/2017/11/25/evtx.html"/>
+   <updated>2017-11-25T00:00:00+11:00</updated>
+   <id>http://localhost:4000/python/2017/11/25/evtx</id>
+   <content type="html">&lt;p&gt;Recently I came across a problem in which I had to convert .evtx files (Windows Event Log files) to a human readable format like XML, CSV, JSON etc.&lt;/p&gt; &lt;p&gt;There’s this popular and only working parser that I know about &lt;a href=&quot;https://github.com/williballenthin/python-evtx&quot;&gt;python-evtx&lt;/a&gt;. It parses .evtx files to XML format.&lt;/p&gt; &lt;p&gt;These are the steps which I followed:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Clone the python-evtx directory...</content>
  </entry>
  
  <entry>

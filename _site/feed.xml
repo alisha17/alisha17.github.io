@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-27T16:26:40+11:00</updated>
+ <updated>2017-11-27T16:53:22+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -25,7 +25,7 @@
    <link href="http://localhost:4000/machine-learning/2017/11/20/pyladies.html"/>
    <updated>2017-11-20T00:00:00+11:00</updated>
    <id>http://localhost:4000/machine-learning/2017/11/20/pyladies</id>
-   <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on Monday, 20th November&amp;#39;17. &lt;/p&gt; &lt;p&gt;I discussed what is Machine Learning, the common methods and evaluation metrics. If you are a complete beginner to machine learning, this talk is for you. Here is the &lt;a href=&quot;http://localhost:4000/assets/introml.pdf&quot;&gt;PDF&lt;/a&gt; of the talk. &lt;/p&gt; &lt;p&gt;Also, following are the pdfs of my...</content>
+   <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on 20th Nov&amp;#39;17.&lt;/p&gt; &lt;p&gt;I gave a beginner introduction to Machine Learning, the common methods and evaluation metrics. Here is the &lt;a href=&quot;http://localhost:4000/assets/introml.pdf&quot;&gt;PDF&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;I have attached below the pdfs of &amp;#39;Knowledge Technologies&amp;#39; subject lectures, projects and sample exam papers, which introduces the concepts of information retrieval, machine learning...</content>
  </entry>
  
  <entry>

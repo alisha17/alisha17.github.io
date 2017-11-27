@@ -15,14 +15,14 @@ I did a project of Single Sign-On and Password Authentication using LDAP as the 
 
 
  -->
-###What is DN?###
+##What is DN?##
 
 For example, consider this string:
 **"CN=Alisha,OU=People,DC=example,DC=google,DC=com"**
 
 This whole string is a DN (Distinguished Name). It is a series of comma-separated key/value pairs used to identify entries uniquely in the directory hierarchy. The DN is actually the entry's fully qualified name, i.e. it uniquely identifies an entry in the directory. DN should be read from right to left. The rightmost component is the root of the tree and the leftmost component is the leaf or the node you want to reach.
 
-###What is directory hierarchy?###
+##What is directory hierarchy?##
 
 The data in LDAP is stored in the form of a hierarchical structure (called DIT, i.e, Directory Information Tree). It is just a tree with nodes and leafs, no rocket science!
 
@@ -41,15 +41,15 @@ So, coming back to our query "CN=Alisha,OU=People,DC=example,DC=google,DC=com"
 
 It means “From the com domain component, find google Domain Component, and from this find example Domain Component. From the example Domain Component, find People Organisational Unit, and from this find an entry whose common name is Alisha.”
 
-###What is DC (Domain Component)?###
+##What is DC (Domain Component)?##
 
 This refers to each component of the domain. For example, “example.google.com” would be written as DC=example,DC=google,DC=com.
 
-###What is OU (Organizational Unit)?###
+##What is OU (Organizational Unit)?##
 
 This refers to the organizational unit (or sometimes the user group) that the user is part of, for example, a user might be a part of People group or Developer group. If the user is part of more than one group, it can be specified as OU= Developer, OU= Tester. (Many a times, developer might have to do all the testing by himself also, hence both of the groups!)
 
-###What is CN (Common Name)?###
+##What is CN (Common Name)?##
 
 This refers to the individual object (person's name; meeting room; recipe name; job title; etc.) for whom/which object you are querying.
 
@@ -64,7 +64,7 @@ cn: alisha
 
 uid is equivalent to user id, so it is a unique user identifier (generally the "logon" name). cn is the "common name" so what I should be "called". (There is also displayName for applications to render too).
 
-###What is RDN (Relative Distinguished Name)?###
+##What is RDN (Relative Distinguished Name)?##
 
 **uid=alisha, ou=People, dc=example, dc=com**
 

@@ -4,13 +4,21 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-11-23T11:12:07+11:00</updated>
+ <updated>2017-11-27T16:26:40+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
    <email>anejaalisha37@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Understanding LDAP terminologies</title>
+   <link href="http://localhost:4000/ldap/2017/11/25/ldapconcepts.html"/>
+   <updated>2017-11-25T00:00:00+11:00</updated>
+   <id>http://localhost:4000/ldap/2017/11/25/ldapconcepts</id>
+   <content type="html">&lt;p&gt;When I started to look into the Fedora’s 389 Directory Server, my first concern was understanding LDAP glossary!&lt;/p&gt; &lt;p&gt;I did a project of Single Sign-On and Password Authentication using LDAP as the database during my internship in the last year of undergraduation, 2+ years back (time literally flies!), but to be honest, I didn’t really understand much at that time.&lt;/p&gt;...</content>
+ </entry>
  
  <entry>
    <title>[PyLadies Talk] Introduction to Machine Learning</title>

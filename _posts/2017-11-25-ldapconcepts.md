@@ -11,8 +11,10 @@ I did a project of Single Sign-On and Password Authentication using LDAP as the 
 
 (It’s better to get started with LDAP using Apache Directory Studio, it becomes easier to visualise things.)
 
-First thing is understanding these terms:
+<!-- ##What is LDAP?##
 
+
+ -->
 ###What is DN?###
 
 For example, consider this string:
@@ -66,11 +68,11 @@ uid is equivalent to user id, so it is a unique user identifier (generally the "
 
 **uid=alisha, ou=People, dc=example, dc=com**
 
-So each of these parts are an **RDN, the relative distinguished name**.
+Each of these parts are an **RDN, the relative distinguished name**.
 
-uid=alisha is and RDN for ou=People, dc=example, dc=com
-uid=alisha and ou=People are RDN for dc=example, dc= com
-uid=alisha, ou=People and sdc=example are RDN for dc=com
+* uid=alisha is and RDN for ou=People, dc=example, dc=com
+* uid=alisha and ou=People are RDN for dc=example, dc= com
+* uid=alisha, ou=People and sdc=example are RDN for dc=com
 
 **Hence, RDN describes the partial path to the entry relative to another entry in the tree, whereas DN is the fully qualified path to an entry.**
 

@@ -26,13 +26,13 @@ This whole string is a DN (Distinguished Name). It is a series of comma-separate
 
 **Consider: uid=alisha, ou=People, dc=example, dc=com**
 
-Each of these parts are an **RDN, the relative distinguished name**.
-
-* uid=alisha is and RDN for ou=People, dc=example, dc=com
 * uid=alisha and ou=People are RDN for dc=example, dc= com
-* uid=alisha, ou=People and sdc=example are RDN for dc=com
 
-**Hence, RDN describes the partial path to the entry relative to another entry in the tree, whereas DN is the fully qualified path to an entry.**
+**Consider: cn=maths, dc=example, dc=com**
+
+* cn=maths is RDN for dc=example, dc=com
+
+**Hence, RDN is how you name a 'singlular' object, whereas DN is the fully qualified path to an entry.**
 
 Generally according to the convention, uid=&lt;name&gt; is the rdn for ou=Accounts, and cn=&lt;name&gt; for ou=Groups, but Active Directory uses CN=&lt;value&gt; for almost all rdns.
 
@@ -46,7 +46,7 @@ Let’s understand this visually.
 ![ldap tree]({{ site.url }}/assets/ldaptree.png)
 
 
-* The top of the tree is called the root or base (dc=example, dc=com)
+* The top of the tree is called the basedn (dc=example, dc=com).
 * Each entry in the tree has one parent entry (object) and zero or more child entries (objects). Each child  entry (object) is a sibling of its parent's other child entries.
 * Each entry is an instance of one or more objectClasses.
 * Objectclasses contain zero or more attributes.

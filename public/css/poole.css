@@ -439,6 +439,20 @@ img[alt="meetup"] {
   width: 750px;
 }
 
+img[alt="para"] {
+  height: 300px;
+  width: 550px;
+}
+
+img[alt="tro"] {
+  height: 600px;
+  width: 900px;
+}
+
+img[alt="HOF"] {
+  height: 400px;
+  width: 750px;
+}
 /*img[alt="ml"] {
   height: 300px;
   width: 500px;

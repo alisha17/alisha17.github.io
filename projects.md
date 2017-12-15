@@ -19,7 +19,7 @@ of ~79%.<br />
 **Aim:** Whitepaper discussion and R&D for Benchmarking the performance of Enterprise grade P100 GPU and
 1080 Ti's.<br/>
 **Technologies Used:** Python (Tensorflow, Scikit-Learn), R&D<br/>
-**Blog:**<br/>
+**Blog:** [read here](https://alisha17.github.io/machine-learning/2017/12/15/benchmarks.html)<br/>
 
 ## Persian2English ##
 

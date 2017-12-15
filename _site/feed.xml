@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-12-12T20:45:24+11:00</updated>
+ <updated>2017-12-15T14:00:39+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -13,7 +13,15 @@
 
  
  <entry>
-   <title>Thinking functionally: Introduction to Functional Programming in Python</title>
+   <title>Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning</title>
+   <link href="http://localhost:4000/machine-learning/2017/12/15/benchmarks.html"/>
+   <updated>2017-12-15T00:00:00+11:00</updated>
+   <id>http://localhost:4000/machine-learning/2017/12/15/benchmarks</id>
+   <content type="html">&lt;h3&gt;Introduction&lt;/h3&gt; &lt;p&gt;This post aims at comparing two different pieces of hardware that are often used for Deep Learning tasks. The first is a &lt;strong&gt;GTX 1080 Ti GPU&lt;/strong&gt;, a gaming device. The second is a &lt;strong&gt;Tesla P100 GPU&lt;/strong&gt;, a high-end device devised for data centers which provides high-performance computing for Deep Learning.&lt;/p&gt; &lt;h3&gt;Hardware&lt;/h3&gt; &lt;p&gt;The hardware specifications of both the devices are:&lt;/p&gt;...</content>
+ </entry>
+ 
+ <entry>
+   <title>[PyConID Talk] Introduction to Functional Programming in Python</title>
    <link href="http://localhost:4000/python/2017/12/12/funcprog.html"/>
    <updated>2017-12-12T00:00:00+11:00</updated>
    <id>http://localhost:4000/python/2017/12/12/funcprog</id>

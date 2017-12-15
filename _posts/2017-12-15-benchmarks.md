@@ -140,3 +140,4 @@ We compared two different GPUs by running a couple of Deep Learning benchmarks. 
 After looking at the results, we can argue that P100 is probably not worth the cost (which is 15X more than the 1080 Ti), while the performance is generally around 15% better.
 
 However, as already discussed in previous section, the larger memory size of P100 would enable to either work with larger networks or with larger batches. Larger batches could lead to better convergence of the gradient descent process, enabling us to train a successful model in a smaller number of epochs. Also, P100 was stabler than 1080 Ti with a much smaller jitter variance during the model training process. Moreover, Tesla P100 might last longer given that it is a high-end device specially devised for datacenters.
+

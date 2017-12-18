@@ -14,7 +14,7 @@ vertical: Code
 
 [Outreachy](https://www.outreachy.org/) provides **three-month internships** for people from groups traditionally **underrepresented in tech**. Interns are paid a stipend of **$5,500** and have a **$500 travel stipend** available to them. Interns work **remotely** with mentors from Free and Open Source Software (FOSS) communities on projects ranging from **programming, user experience, documentation, illustration and graphical design, to data science**. Interns often find employment after their internship with Outreachy sponsors or in jobs that use the FOSS skills they learned during their internship.
 
-Outreachy internships are open internationally to women (cis and trans), trans men, and genderqueer people. Internships are also open to **residents and nationals of the United States of any gender who are Black/African American, Hispanic/Latin@, Native American/American Indian, Alaska Native, Native Hawaiian, or Pacific Islander.
+Outreachy internships are open internationally to women (cis and trans), trans men, and genderqueer people. Internships are also open to residents and nationals of the United States of any gender who are Black/African American, Hispanic/Latin@, Native American/American Indian, Alaska Native, Native Hawaiian, or Pacific Islander.
 
 ## How I ended up being an Outreachy Intern at Fedora?
 

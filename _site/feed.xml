@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-12-15T14:00:39+11:00</updated>
+ <updated>2017-12-19T00:01:35+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -53,11 +53,11 @@
  </entry>
  
  <entry>
-   <title>Outreachy0</title>
-   <link href="http://localhost:4000/2017/11/17/outreachy0.html"/>
+   <title>My journey of getting into the Outreachy Program</title>
+   <link href="http://localhost:4000/outreachy/2017/11/17/outreachy0.html"/>
    <updated>2017-11-17T00:00:00+11:00</updated>
-   <id>http://localhost:4000/2017/11/17/outreachy0</id>
-   <content type="html">&lt;p&gt;My tryst with Outreachy&lt;/p&gt; &lt;p&gt;I first heard of Outreachy through a friend in 2015. But, at that time, I just completed my undergraduation and was not confident of myself AT ALL, which is really justifiable, since you cannot think of working for top-notch organizations/communities like Mozilla, Fedora, Linux, Wikimedia and many more..&lt;/p&gt; &lt;p&gt;However, I was really intrigued with the idea...</content>
+   <id>http://localhost:4000/outreachy/2017/11/17/outreachy0</id>
+   <content type="html">&lt;h2&gt;What is Outreachy?&lt;/h2&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/outreachy.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://www.outreachy.org/&quot;&gt;Outreachy&lt;/a&gt; provides &lt;strong&gt;three-month internships&lt;/strong&gt; for people from groups traditionally &lt;strong&gt;underrepresented in tech&lt;/strong&gt;. Interns are paid a stipend of &lt;strong&gt;$5,500&lt;/strong&gt; and have a &lt;strong&gt;$500 travel stipend&lt;/strong&gt; available to them. Interns work &lt;strong&gt;remotely&lt;/strong&gt; with mentors from Free and Open Source Software (FOSS) communities on projects ranging from &lt;strong&gt;programming, user experience, documentation, illustration and graphical design,...</content>
  </entry>
  
  <entry>

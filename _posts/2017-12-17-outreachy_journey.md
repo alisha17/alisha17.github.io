@@ -14,7 +14,7 @@ vertical: Code
 
 [Outreachy](https://www.outreachy.org/) provides **three-month internships** for people from groups traditionally **underrepresented in tech**. Interns are paid a stipend of **$5,500** and have a **$500 travel stipend** available to them. Interns work **remotely** with mentors from Free and Open Source Software (FOSS) communities on projects ranging from **programming, user experience, documentation, illustration and graphical design, to data science**. Interns often find employment after their internship with Outreachy sponsors or in jobs that use the FOSS skills they learned during their internship.
 
-Outreachy internships are open internationally to women (cis and trans), trans men, and genderqueer people. Internships are also open to residents and nationals of the United States of any gender who are Black/African American, Hispanic/Latin@, Native American/American Indian, Alaska Native, Native Hawaiian, or Pacific Islander.
+Outreachy internships are open internationally to women (cis and trans), trans men, and genderqueer people. Internships are also open to sresidents and nationals of the United States of any gender who are Black/African American, Hispanic/Latin@, Native American/American Indian, Alaska Native, Native Hawaiian, or Pacific Islander.
 
 ## How I ended up being an Outreachy Intern at Fedora?
 
@@ -23,7 +23,7 @@ I first heard of Outreachy through a friend in 2015. But at that time, I had jus
 ### Getting started with open source
 
 However, I was really intrigued with the idea of Free and Open Source Software (FOSS). Hence, I decided to make some contributions towards it.
-Mozilla is an organization that everyone must have heard of since childhood. Atleast I am using Firefox from the time I first started using computers. Fortunately, I have a friend who was already a contributor in Mozilla automation and tooling projects. She introduced me to a Senior Engineer working at Mozilla. He mentored me and helped me in making my first contribution. In a span of one year, I contributed to Bedrock, Firefox, Treeherder and Taskcluster and had around 35 merged PRs into the codebases.
+Mozilla is an organization that everyone must have heard of since childhood. Atleast I am using Firefox from the time I first started using computers. Fortunately, I have a friend who was already a contributor in Mozilla automation and tooling projects. She introduced me to a Senior Engineer working at Mozilla. He mentored me and helped me in making my first contribution. In a span of one year, I contributed to Bedrock, Firefox, Treeherder and Taskcluster and have around 35 merged PRs into the codebases.
 
 ### Outreachy round 14: Disappointments
 
@@ -31,11 +31,11 @@ I decided to apply for Outreachy round 14 (June-Aug'17); for which the applicati
 There were some many awesome organisations and projects. I was already familiar with how Mozilla's bug tracking system works (using Bugzilla), how to open PRs and how the reviews work etc. I chose 2-3 projects which I found interesting. I made contributions to all of them, but
 ultimately the project which interested me the most was **Rust Web Assembly Showcase**. The mentor of the project was **Brian Anderson (co-creator of Rust)**. The task of the project was to create a web application in Rust and compile it to Web Assembly.
 
-I started fixing some Rust bugs and making small Rust applications all compiled to Web Assembly. It was so much fun! My mentor shortlisted me as the Outreachy intern for his project.
+I started fixing some Rust bugs and making small Rust applications all compiled to Web Assembly. It was so much fun! Brian shortlisted me as the Outreachy intern for his project.
 
 **But then this happened.....**
 
-A week before the selected Outreachy interns were to be announced, I received a mail from the organizers informing me that I was not eligible for the internship since I did not have full 3 months off from the university, and the Outreachy eligibility criteria clearly states this. Though, I had like full 2 months off, but the academic calender did not explicitly asserted this. Me and Brian tried to convince them, but probably they were right as they did not want the intern's studies to suffer. Brian was disappointed too (since I had already started working on the project) and I was very disheartened, but that did not deter me from working harder and learning Rust in the process. Brian, being an awesome Rust community member, still mentored me all through the summer like he would mentor to an intern and I ended up doing two Rust projects: [Tic-Tac-Toe](https://github.com/alisha17/tic-tac-toe) and [Testrunner](https://github.com/alisha17/testrunner). **[Thanks Brian!]**. We had weekly Hangouts and IRC meetings, code reviews, bug fixes and it was a great learning experience. I even completed the Rust Libz-Blitz contest and won free tickets to Rust Fest Switzerland, but I wasn't able to go anyway (That's a story for another day! :-p)
+A week before the selected Outreachy interns were to be announced, I received a mail from the organizers informing me that I was not eligible for the internship since I did not have full 3 months off from the university, and the Outreachy eligibility criteria clearly states this. Though, I had like full 2 months off, but the academic calender did not explicitly asserted this. Me and Brian tried to convince them, but probably they were right as they did not want the intern's studies to suffer. Brian was disappointed too (since I had already started working on the project) and I was very disheartened, but that did not deter me from working harder and learning Rust in the process. Brian, being an awesome Rust community member, still mentored me all through the summer like he would mentor an intern and I ended up doing two Rust projects: [Tic-Tac-Toe](https://github.com/alisha17/tic-tac-toe) and [Testrunner](https://github.com/alisha17/testrunner). **[Thanks Brian!]**. We had weekly Hangouts and IRC meetings, code reviews, bug fixes and it was a great learning experience. I even completed the [Rust Libz-Blitz](http://blog.rustfest.eu/libz-blitz) contest and won free tickets to Rust Fest Switzerland, but I wasn't able to go anyway (That's a story for another day! :-p)
 
 ### Outreachy Round 15: Finally!
 I was really excited for Outreachy Round 15 (Dec'17-March'18) and was determined to apply for it.
@@ -70,15 +70,15 @@ This is very essential as almost all open source repositories use some king of v
 I was already an open source contributor from past 6 months when I applied for the first time for Outreachy and I was familiar with  how things like Pull Requests, Patch Reviews, Bug Filling, Bug fixing etc. worked. If you start with these things during the Outreachy application period, you will spend more time understanding these and subsequently, you will get less time to work on the actual project.
 
 ### COMMUNICATION MEDIUMS - IRC, SLACK
-Probably IRC is the most common open source communication medium. It facilitates communication in the form of text and is based on client-server communication. Read about how IRC works and setup a client for it. I use [Hexchat](https://hexchat.github.io/) for IRC and it works like a breeze.
-Slack is pretty popular these days and getting started with it is as easy as creating an account and start talking. You can also dowload the iOS or Android app for it to always remain updated. No rocket science involved!
+Probably IRC is the most common open source communication medium. Communities like Fedora, Mozilla, Openstack use IRC. It facilitates communication in the form of text and is based on client-server communication. Read about how IRC works and setup a client for it. I use [Hexchat](https://hexchat.github.io/) for IRC and it works like a breeze.
+Slack is pretty popular these days and getting started with it is as easy as creating an account and start talking. You can also download the Slack iOS or Android app to always remain updated.
 
 ### RESPECT YOUR MENTORS
 I consider myself lucky as I have always had amazing mentors. But remember, they are also human beings. By mentoring you, they are putting double the efforts (as most of them are full-time employees as well). So:
 
 * Respect their time, do not bug them too much.
 * Talk to them politely (mails/slack/IRC). Use the magic words, 'sorry', 'please', 'thankyou'.
-* Be honest with them. If you don't know something, **ASK** them. They are there to help you.
+* Be honest with them. If you don't know something, **ask** them. They are there to help you.
 * Be in touch with them and talk about your progress regularly.
 
 ### ASK QUESTIONS, A LOT!

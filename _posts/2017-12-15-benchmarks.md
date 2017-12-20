@@ -66,24 +66,18 @@ In order to compare the performance of both the hardware architectures, we used 
 
 #### Time taken during training
 
-For a batch size of 32 and 2000 training steps, the total time taken to train the model on the CPU and the two GPU’s is:
+For a batch size of 32 and 2000 training steps, the total time taken to train the model on the CPU, P100 and 1080 Ti was:
 
-|                                         | CPU | GTX 1080 Ti | Tesla P100 |
-| :-------------------------------------: | :-----------| :------------------: | :--------------: |
-|             **Time Taken (in mins)**             |        240         | 67 |     51     |
-
-And the time taken by P100, with 1080 Ti as the baseline is:
-
-|                                         | GTX 1080 Ti | Tesla P100 |
-| :-------------------------------------: | :------------------: | :--------------: |
-|             **Time Taken (in %)**                  | 100 |      80    |
-
+|                               | **GTX 1080 Ti** | **Tesla P100** | **CPU** |
+| :---------------------------: | :-------------- | :------------: | :-----: |
+| **Total time taken (in min)** | 67              |       51       |   240   |
+|      **% of time taken**      | 100%            |      76%       |  400%   |
 
 We can see that the GPU’s are significantly faster than the CPU, with about 4X speedup. Regarding the comparison between both the GPU’s, the P100 outperforms the 1080 Ti, though there is only 1.3X speedup, i.e. the time taken for training is reduced by approximately 20%.
 
 #### Evaluation Metrics and Validation Loss comparison
 
-Since the P100 has a larger memory size (i.e. 5 GB more than the 1080 Ti), it is able to fit a larger batch size for the given dataset. While the largest batch size for 1080 Ti is 32, the largest batch size for the P100 is 85. Training with these batch sizes and taking 2000 training steps gives the following results for the evaluation metrics and the loss in validation:
+Since the P100 has a larger memory size (i.e. 5 GB more than the 1080 Ti), it is able to fit a larger batch size for the given dataset. While the largest batch size for 1080 Ti is 32, the largest batch size for the P100 is 85. Training with these batch sizes and taking 2000 training steps gives the following results for the evaluation metrics and the loss in validation.
 
 ![](https://s3-eu-west-1.amazonaws.com/satellite-data/Screenshot+from+2017-12-15+09-55-28.png)
 
@@ -95,15 +89,15 @@ If we visualize the plot for validation loss in the model for both the GPU’s f
 
 #### Power Consumption and Temperature analysis
 
-We recorded the power consumption and the temperature of the 1080 Ti and P100, for 5000 points at equal time intervals during the training of the model.
+We recorded the power consumption and the temperature of the 1080 Ti and P100, for 5000 points at equal time intervals during the training of the model. Following is the plot for the power consumption by 1080 Ti and P100 during training of the model:
 
-Following is the plot for the power consumption by 1080 Ti and P100 during training of the model:
-
-![]( https://s3-eu-west-1.amazonaws.com/satellite-data/Screenshot+from+2017-12-15+09-49-28.png )
+![](https://ws3.sinaimg.cn/large/006tNc79gy1fmn5cohs4rj312k0lcjsu.jpg)
 
 Following is the plot for the temperature of 1080 Ti and P100 during training of the model:
 
 ![](https://s3-eu-west-1.amazonaws.com/satellite-data/Screenshot+from+2017-12-15+09-49-37.png)
+
+
 
 As we can infer from the plots, P100 definitely beats 1080 Ti in terms of power consumption and the temperature. For the temperature, it is natural since 1080 Ti GPU’s are installed in our office at room temperature and do not have any special cooling system besides the fans located in the device. Since P100 runs at a lower temperature as compared to the 1080 Ti, it might have special cooling systems or better heat management mechanisms .
 
@@ -111,52 +105,44 @@ As we can infer from the plots, P100 definitely beats 1080 Ti in terms of power 
 
 In this section, we use [InceptionV3](https://arxiv.org/abs/1512.00567),  [ResNet-50](https://arxiv.org/abs/1512.03385),  [VGG16](https://arxiv.org/abs/1409.1556), and [ResNet-152](https://arxiv.org/abs/1512.03385) models on synthetic data to compare the performance of P100 and 1080 Ti.
 
-
 ##### Speedup over CPU
 
 Compared to the CPUs, GPUs provide huge performance speedups during deep learning training. This is analyzed from the following bar chart. The ResNet-50 model is trained with a batch size of 64.
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcgy1fm4n14je2jj30xo0mw401.jpg)
 
-
-
 ##### Speedup with multi-GPUs
 
-Training on double GPUs enhanced the performance significantly, be it P100 or 1080 Ti. However, the P100 was not much faster than the 1080 Ti, with double GPUs). There was only slight improvement, as clear from the line plot below.
+Training on double GPUs enhanced the performance significantly, be it P100 or 1080 Ti. However, the P100 was not much faster than the 1080 Ti (with double GPUs). There was only slight improvement, as clear from the line plot below.
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcgy1fm82h35wtqj30lj0bzmy5.jpg)
 
 
 
-#### Half-Precision (FP16) Performance
+##### Half-Precision (FP16) Performance
 
-According to the official documentation, P100 is designed for high-performance double-precision floats (FP64) which is used in many HPC applications such as quantum chemistry and numerical simulation, since there are 1792 double-precision CUDA cores, which is half the number of single-precision (FP32) CUDA cores.
-Even with the GPUs like the 1080 Ti or the Titan X, we can compute with half-precision floats (FP16), however the performance will be slower than single-precision floats (FP32).
+According to the official documentation, P100 is designed for high-performance double-precision floats (FP64) which is used in many HPC applications such as quantum chemistry and numerical simulation, since there are 1792 double-precision CUDA cores, which is half the number of single-precision (FP32) CUDA cores. Even with the GPUs like the 1080 Ti or the Titan X, we can compute with half-precision floats (FP16), however the performance will be slower than single-precision floats (FP32). The P100 also supports FP16 calculation which speeds up deep learning.
 
-Also the P100 supports FP16 calculation which speeds up deep learning.
-
-Here is a comparison of FP16 and FP32 performances on the P100. There is around 13% speedup on average in this case.
+Following is a comparison of FP16 and FP32 performances on the P100. There is around 13% speedup on average in this case.
 
 ![](https://ws2.sinaimg.cn/large/006tKfTcgy1fm4ntaizjfj312q0oeq4n.jpg)
 
-#### Memory Bottleneck
+##### Memory Bottleneck
 
 GPU memory will never be too much for large-scale deep learning training. Sometimes the memory will be a bottleneck for training efficiency. Larger mini-batches are more efficient to compute and lead to better convergence in fewer epochs , but at the same time they also require more GPU memory.
+
 P100 has 5GB more memory than 1080 Ti, which enables larger batch size in deep learning. For example, if we use a batch size of 64, the 1080 Ti will run out of memory, however the P100 will still work. This is demonstrated in the following bar chart.
 
 ![](https://ws3.sinaimg.cn/large/006tKfTcgy1fm82ytt7mrj30n30c1js3.jpg)
 
-One possible approach to avoid this is by applying half-precision computing because storing FP16 data compared to the higher FP32 or FP64 reduces memory usage, which enables us to use larger batch size or train larger networks. For example, if we use FP16 with a batch size of 64 on ResNet-50 model in 1080 Ti, then the **out-of-memory** problem will be solved. This is demonstrated in the following bar chart.
+One possible approach to avoid this is by applying half-precision computing because storing FP16 data compared to the higher FP32 or FP64 reduces memory usage, which enables us to use larger batch size or train larger networks. For example, if we use FP16 with a batch size of 64 on ResNet-50 model in 1080 Ti, then the out-of-memory problem will be solved. This is demonstrated in the following bar chart.
 
 ![](https://ws1.sinaimg.cn/large/006tNc79gy1fmm43el98jj30nu0cf750.jpg)
 
-
 ### Conclusions
-
 
 We compared two different GPUs by running a couple of Deep Learning benchmarks. These devices are GeForce GTX 1080 and Tesla P100.
 
 After looking at the results, we can argue that the P100 is probably not worth the cost (which is 15X more than the 1080 Ti), while the performance is generally around 15% better.
 
-However, as already discussed in previous section, the larger memory size of P100 would enable to either work with larger networks or with larger batches. Larger batches could lead to better convergence of the gradient descent process, enabling us to train a successful model in a smaller number of epochs. Moreover, P100 might last longer given that it is a high-end device specially devised for datacenters and runs on a lower temperature and much cooler as compared to the 1080 Ti.
-
+However, as already discussed in previous section, the larger memory size of P100 would enable to either work with larger networks or with larger batches. Larger batches could lead to better convergence of the gradient descent process, enabling us to train a successful model in a smaller number of epochs. Moreover, P100 might last longer given that it is a high-end device specially devised for datacenters and runs on a lower temperature and is much cooler as compared to the 1080 Ti.

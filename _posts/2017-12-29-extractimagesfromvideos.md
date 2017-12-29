@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Extracting random images from videos in Python"
+title: "Extract random images from videos in Python"
 categories: [Python]
 comments: true
 vertical: Code

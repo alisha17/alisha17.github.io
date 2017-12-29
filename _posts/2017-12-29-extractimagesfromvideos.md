@@ -6,11 +6,11 @@ comments: true
 vertical: Code
 ---
 
-I am working on automatic logo detection in the sports videos using Deep Learning. For this, i will
+I am working on the automatic logo detection in the sports videos using Deep Learning. For this, i will
 be using the Faster-RCNN model.
 
 To train the model with the annotations in the images, I required random images from the selected videos.
-Following is the script that I used for extracting images from videos.
+Following is the script (this is in python2; for python3, it should just be a matter of using parentheses with print) that I used for extracting images from videos.
 
 ```python
 
@@ -31,6 +31,8 @@ def random_items(iterator, num_images=1):
 
 # Read the video, extract images and save them to a directory
 def extract_images(video_path, num_images, save_to_path):
+    # Use vreader as it loads the video frame-by-frame
+    # If it is a large video, using vread() may exhaust the memory
     videogen = skvideo.io.vreader(video_path)
     random_set = random_items(videogen, num_images)
 
@@ -43,7 +45,6 @@ def extract_images(video_path, num_images, save_to_path):
         # instead of saving, use imshow()
         # plt.imshow(frame, interpolation='nearest')
         plt.show()
-        print count
         count += 1
 
 if __name__ == '__main__':
@@ -60,7 +61,7 @@ if __name__ == '__main__':
 
 ```
 
-Run the above code using the following command (I want 250 random images from this video):
+Run the above code using the following command (I wanted 250 random images from this video):
 
 ```
 python extract_images_from_videos.py --video-path="/home/alisha/AFL 2017 Season Highlights-0O3rHhzO9VQ.mkv" --num-images=250 --save-to-path="/home/alisha/test_folder"

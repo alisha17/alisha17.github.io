@@ -4,13 +4,21 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-12-19T00:47:32+11:00</updated>
+ <updated>2017-12-29T13:54:07+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
    <email>anejaalisha37@gmail.com</email>
  </author>
 
+ 
+ <entry>
+   <title>Extracting random images from videos in Python</title>
+   <link href="http://localhost:4000/python/2017/12/29/extractimagesfromvideos.html"/>
+   <updated>2017-12-29T00:00:00+11:00</updated>
+   <id>http://localhost:4000/python/2017/12/29/extractimagesfromvideos</id>
+   <content type="html">&lt;p&gt;I am working on the automatic logo detection in the sports videos using Deep Learning. For this, i will be using the Faster-RCNN model.&lt;/p&gt; &lt;p&gt;To train the model with the annotations in the images, I required random images from the selected videos. Following is the script (this is in python2; for python3, it should just be a matter of using...</content>
+ </entry>
  
  <entry>
    <title>My journey of getting into the Outreachy Program</title>

@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-12-29T13:54:07+11:00</updated>
+ <updated>2017-12-29T16:42:17+11:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -13,7 +13,31 @@
 
  
  <entry>
-   <title>Extracting random images from videos in Python</title>
+   <title>Outreachy holiday edition: Implementing LRU cache in Rust</title>
+   <link href="http://localhost:4000/outreachy/2017/12/29/outreachyholiday.html"/>
+   <updated>2017-12-29T00:00:00+11:00</updated>
+   <id>http://localhost:4000/outreachy/2017/12/29/outreachyholiday</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Outreachy week 3: Adding automember plugin support to dsconf (Part 2: Automember CLI)</title>
+   <link href="http://localhost:4000/outreachy/2017/12/29/outreachy3.html"/>
+   <updated>2017-12-29T00:00:00+11:00</updated>
+   <id>http://localhost:4000/outreachy/2017/12/29/outreachy3</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Outreachy week 1&2: Adding automember plugin support to dsconf (Part 1: Automembership Plugin)</title>
+   <link href="http://localhost:4000/outreachy/2017/12/29/outreachy1&2.html"/>
+   <updated>2017-12-29T00:00:00+11:00</updated>
+   <id>http://localhost:4000/outreachy/2017/12/29/outreachy1&2</id>
+   <content type="html"></content>
+ </entry>
+ 
+ <entry>
+   <title>Extract random images from videos in Python</title>
    <link href="http://localhost:4000/python/2017/12/29/extractimagesfromvideos.html"/>
    <updated>2017-12-29T00:00:00+11:00</updated>
    <id>http://localhost:4000/python/2017/12/29/extractimagesfromvideos</id>

@@ -453,6 +453,19 @@ img[alt="HOF"] {
   height: 400px;
   width: 750px;
 }
+
+img[alt="italy"] {
+  height: 600px;
+  width: 680px;
+}
+
+img[alt="talk"] {
+  height: 600px;
+  width: 680px;
+}
+
+
+
 /*img[alt="ml"] {
   height: 300px;
   width: 500px;

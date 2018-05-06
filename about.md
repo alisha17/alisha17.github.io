@@ -15,8 +15,4 @@ and at the moment interning with Fedora and helping in improving the 389 Directo
 
 I am an open source enthusiast, my most contributions done towards Mozilla and Rustlang.
 
-I help children and women by mentoring them, who want to learn coding. Hence, I am involved with [Code Camp](https://alisha17.github.io/codecamp/2017/09/29/codecamp.html) and DjangoGirls workshops.
-
-This is me :)
-
-![alisha]({{ site.url }}/assets/alisha.jpeg)
+I am also involved with [Code Camp](https://alisha17.github.io/codecamp/2017/09/29/codecamp.html) and DjangoGirls workshops.

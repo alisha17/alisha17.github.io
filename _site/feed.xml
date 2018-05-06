@@ -4,7 +4,7 @@
  <title>Alisha Aneja</title>
  <link href="http://localhost:4000/feed.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-12-29T16:42:17+11:00</updated>
+ <updated>2018-02-11T10:57:42+09:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Alisha Aneja</name>
@@ -15,7 +15,7 @@
  <entry>
    <title>Outreachy holiday edition: Implementing LRU cache in Rust</title>
    <link href="http://localhost:4000/outreachy/2017/12/29/outreachyholiday.html"/>
-   <updated>2017-12-29T00:00:00+11:00</updated>
+   <updated>2017-12-29T00:00:00+09:00</updated>
    <id>http://localhost:4000/outreachy/2017/12/29/outreachyholiday</id>
    <content type="html"></content>
  </entry>
@@ -23,7 +23,7 @@
  <entry>
    <title>Outreachy week 3: Adding automember plugin support to dsconf (Part 2: Automember CLI)</title>
    <link href="http://localhost:4000/outreachy/2017/12/29/outreachy3.html"/>
-   <updated>2017-12-29T00:00:00+11:00</updated>
+   <updated>2017-12-29T00:00:00+09:00</updated>
    <id>http://localhost:4000/outreachy/2017/12/29/outreachy3</id>
    <content type="html"></content>
  </entry>
@@ -31,15 +31,15 @@
  <entry>
    <title>Outreachy week 1&2: Adding automember plugin support to dsconf (Part 1: Automembership Plugin)</title>
    <link href="http://localhost:4000/outreachy/2017/12/29/outreachy1&2.html"/>
-   <updated>2017-12-29T00:00:00+11:00</updated>
+   <updated>2017-12-29T00:00:00+09:00</updated>
    <id>http://localhost:4000/outreachy/2017/12/29/outreachy1&2</id>
-   <content type="html"></content>
+   <content type="html">&lt;p&gt;You are in the examination hall, consider two scenarios:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;p&gt;All 10,000 students from various courses like CS, Business, Hospitality, Medicine etc. are waiting in a single queue and someone who checks the ID card of the students advises about the floor no., room no., desk no. etc. to each of the student (imagine like in the pic below).&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;All...</content>
  </entry>
  
  <entry>
    <title>Extract random images from videos in Python</title>
    <link href="http://localhost:4000/python/2017/12/29/extractimagesfromvideos.html"/>
-   <updated>2017-12-29T00:00:00+11:00</updated>
+   <updated>2017-12-29T00:00:00+09:00</updated>
    <id>http://localhost:4000/python/2017/12/29/extractimagesfromvideos</id>
    <content type="html">&lt;p&gt;I am working on the automatic logo detection in the sports videos using Deep Learning. For this, i will be using the Faster-RCNN model.&lt;/p&gt; &lt;p&gt;To train the model with the annotations in the images, I required random images from the selected videos. Following is the script (this is in python2; for python3, it should just be a matter of using...</content>
  </entry>
@@ -47,7 +47,7 @@
  <entry>
    <title>My journey of getting into the Outreachy Program</title>
    <link href="http://localhost:4000/outreachy/2017/12/17/outreachy_journey.html"/>
-   <updated>2017-12-17T00:00:00+11:00</updated>
+   <updated>2017-12-17T00:00:00+09:00</updated>
    <id>http://localhost:4000/outreachy/2017/12/17/outreachy_journey</id>
    <content type="html">&lt;h2&gt;What is Outreachy?&lt;/h2&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/outreachy.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://www.outreachy.org/&quot;&gt;Outreachy&lt;/a&gt; provides &lt;strong&gt;three-month internships&lt;/strong&gt; for people from groups traditionally &lt;strong&gt;underrepresented in tech&lt;/strong&gt;. Interns are paid a stipend of &lt;strong&gt;$5,500&lt;/strong&gt; and have a &lt;strong&gt;$500 travel stipend&lt;/strong&gt; available to them. Interns work &lt;strong&gt;remotely&lt;/strong&gt; with mentors from Free and Open Source Software (FOSS) communities on projects ranging from &lt;strong&gt;programming, user experience, documentation, illustration and graphical design,...</content>
  </entry>
@@ -55,7 +55,7 @@
  <entry>
    <title>Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning</title>
    <link href="http://localhost:4000/machine-learning/2017/12/15/benchmarks.html"/>
-   <updated>2017-12-15T00:00:00+11:00</updated>
+   <updated>2017-12-15T00:00:00+09:00</updated>
    <id>http://localhost:4000/machine-learning/2017/12/15/benchmarks</id>
    <content type="html">&lt;h3&gt;Introduction&lt;/h3&gt; &lt;p&gt;This post aims at comparing two different pieces of hardware that are often used for Deep Learning tasks. The first is a &lt;strong&gt;GTX 1080 Ti GPU&lt;/strong&gt;, a gaming device. The second is a &lt;strong&gt;Tesla P100 GPU&lt;/strong&gt;, a high-end device devised for data centers which provides high-performance computing for Deep Learning.&lt;/p&gt; &lt;h3&gt;Hardware&lt;/h3&gt; &lt;p&gt;The hardware specifications of both the devices are:&lt;/p&gt;...</content>
  </entry>
@@ -63,7 +63,7 @@
  <entry>
    <title>[PyConID Talk] Introduction to Functional Programming in Python</title>
    <link href="http://localhost:4000/python/2017/12/12/funcprog.html"/>
-   <updated>2017-12-12T00:00:00+11:00</updated>
+   <updated>2017-12-12T00:00:00+09:00</updated>
    <id>http://localhost:4000/python/2017/12/12/funcprog</id>
    <content type="html">&lt;h1&gt;What is Functional Programming?&lt;/h1&gt; &lt;h2&gt;Programming paradigm&lt;/h2&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/functprog/para.png&quot; alt=&quot;para&quot;&gt;&lt;/p&gt; &lt;p&gt;The programming paradigms can be roughly divided into four categories, namely the imperative programming, where you specify do this, do that, then do this. Python is an imperative language. The second category is object oriented programming, where you model your data in the form of classes, objects and methods. Java, C++...</content>
  </entry>
@@ -71,7 +71,7 @@
  <entry>
    <title>Understanding LDAP terminologies</title>
    <link href="http://localhost:4000/ldap/2017/11/25/ldapconcepts.html"/>
-   <updated>2017-11-25T00:00:00+11:00</updated>
+   <updated>2017-11-25T00:00:00+09:00</updated>
    <id>http://localhost:4000/ldap/2017/11/25/ldapconcepts</id>
    <content type="html">&lt;p&gt;When I started to look into the Fedora’s 389 Directory Server, my first concern was understanding LDAP glossary!&lt;/p&gt; &lt;p&gt;I did a project of Single Sign-On and Password Authentication using LDAP as the database during my internship in the last year of undergraduation, 2+ years back (time literally flies!), but to be honest, I didn’t really understand much at that time.&lt;/p&gt;...</content>
  </entry>
@@ -79,7 +79,7 @@
  <entry>
    <title>Parsing Windows event log files (.evtx) using Python</title>
    <link href="http://localhost:4000/python/2017/11/25/evtx.html"/>
-   <updated>2017-11-25T00:00:00+11:00</updated>
+   <updated>2017-11-25T00:00:00+09:00</updated>
    <id>http://localhost:4000/python/2017/11/25/evtx</id>
    <content type="html">&lt;p&gt;Recently I came across a problem in which I had to convert .evtx files (Windows Event Log files) to a human readable format like XML, CSV, JSON etc.&lt;/p&gt; &lt;p&gt;There’s this popular and only working parser that I know about &lt;a href=&quot;https://github.com/williballenthin/python-evtx&quot;&gt;python-evtx&lt;/a&gt;. It parses .evtx files to XML format.&lt;/p&gt; &lt;p&gt;These are the steps which I followed:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Clone the python-evtx directory...</content>
  </entry>
@@ -87,7 +87,7 @@
  <entry>
    <title>[PyLadies Talk] Introduction to Machine Learning</title>
    <link href="http://localhost:4000/machine-learning/2017/11/20/pyladies.html"/>
-   <updated>2017-11-20T00:00:00+11:00</updated>
+   <updated>2017-11-20T00:00:00+09:00</updated>
    <id>http://localhost:4000/machine-learning/2017/11/20/pyladies</id>
    <content type="html">&lt;p&gt;This post is about the talk I gave in &lt;a href=&quot;https://www.meetup.com/en-AU/PyLadies-Melbourne/events/241058465/&quot;&gt;PyLadies Melbourne&lt;/a&gt; meetup on 20th Nov&amp;#39;17.&lt;/p&gt; &lt;p&gt;I gave a beginner introduction to Machine Learning, the common methods and evaluation metrics. Here is the &lt;a href=&quot;http://localhost:4000/assets/introml.pdf&quot;&gt;PDF&lt;/a&gt;.&lt;/p&gt; &lt;p&gt;I have attached below the pdfs of &amp;#39;Knowledge Technologies&amp;#39; subject lectures, projects and sample exam papers, which introduces the concepts of information retrieval, machine learning...</content>
  </entry>
@@ -95,7 +95,7 @@
  <entry>
    <title>[MLAI Meetup Talk] My Experience as a Machine Learning Intern</title>
    <link href="http://localhost:4000/silverpond/2017/10/18/mlai.html"/>
-   <updated>2017-10-18T00:00:00+11:00</updated>
+   <updated>2017-10-18T00:00:00+09:00</updated>
    <id>http://localhost:4000/silverpond/2017/10/18/mlai</id>
    <content type="html">&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt; &lt;p&gt;This is me at SilverPond :)&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image1.jpeg&quot; alt=&quot;pizzer&quot;&gt;&lt;/p&gt; &lt;p&gt;I spent initial few weeks getting familiar with Silverbrane. Silverbrane is an amazing Machine Learning product developed by an amazing team at SilverPond which combines optimised expert-driven tooling with AI, which in brief does this:&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/silverbrane.png&quot; alt=&quot;pizzeria...</content>
  </entry>
@@ -103,7 +103,7 @@
  <entry>
    <title>Custom Links within ActiveAdmin Pages - Ruby on Rails</title>
    <link href="http://localhost:4000/ruby-on-rails/2017/10/04/custom-rails.html"/>
-   <updated>2017-10-04T00:00:00+11:00</updated>
+   <updated>2017-10-04T00:00:00+09:00</updated>
    <id>http://localhost:4000/ruby-on-rails/2017/10/04/custom-rails</id>
    <content type="html">&lt;p&gt;I am working on a Ruby on Rails project in my organization and I am very new to Rails. It took me days to find a way for creating custom buttons and their methods alongside the default &amp;#39;Edit, View, Delete .....&amp;#39; buttons.&lt;/p&gt; &lt;p&gt;I finally found a fix to this and I concluded that Rails does really magical stuff behind the...</content>
  </entry>
@@ -111,7 +111,7 @@
  <entry>
    <title>Keep Calm and go to Code Camp!</title>
    <link href="http://localhost:4000/code-camp/2017/09/29/codecamp.html"/>
-   <updated>2017-09-29T00:00:00+10:00</updated>
+   <updated>2017-09-29T00:00:00+09:00</updated>
    <id>http://localhost:4000/code-camp/2017/09/29/codecamp</id>
    <content type="html">&lt;p&gt;Code Camp is a fun coding camp of 2, 3 and 4 days where children learn to code. They get a hands-on experience of what coding is.&lt;/p&gt; &lt;p&gt;Now some pictures!&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/1.jpg&quot; alt=&quot;pizzeria hde1&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/4.jpg&quot; alt=&quot;pizzeria hde4&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image2.jpeg&quot; alt=&quot;pizzeria hde2&quot;&gt;&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/image3.jpeg&quot; alt=&quot;pizzeria hde3&quot;&gt;&lt;/p&gt; &lt;p&gt;The classes are divided into 4 groups:&lt;/p&gt; &lt;h2&gt;Little League&lt;/h2&gt; &lt;p&gt;This group is for kids...</content>
  </entry>
@@ -119,7 +119,7 @@
  <entry>
    <title>Interview Experience with HDE Inc.</title>
    <link href="http://localhost:4000/hde/2017/09/02/hde-interview.html"/>
-   <updated>2017-09-02T00:00:00+10:00</updated>
+   <updated>2017-09-02T00:00:00+09:00</updated>
    <id>http://localhost:4000/hde/2017/09/02/hde-interview</id>
    <content type="html">&lt;p&gt;HDE Inc. is a Japanese Cloud Security Provider established in 1996 and their Global Internship Program (GIP) has become very popular in recent times.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Some benefits of this internship:&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;Up to 150,000 JPY/month subsidy. The subsidy is given to cover living costs such as meals, commuting expense, and accommodation.&lt;/li&gt; &lt;li&gt;Round-trip airfares coverage&lt;/li&gt; &lt;li&gt;Medical insurance&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;For more info, refer...</content>
  </entry>
@@ -127,7 +127,7 @@
  <entry>
    <title>First Week of Machine Learning Internship at SilverPond</title>
    <link href="http://localhost:4000/silverpond/2017/08/27/first-week.html"/>
-   <updated>2017-08-27T00:00:00+10:00</updated>
+   <updated>2017-08-27T00:00:00+09:00</updated>
    <id>http://localhost:4000/silverpond/2017/08/27/first-week</id>
    <content type="html">&lt;p&gt;I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.&lt;/p&gt; &lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/silverpond11.jpg&quot; alt=&quot;ml&quot;&gt;&lt;/p&gt; &lt;p&gt;SilverPond is a team of data scientists, machine learning specialists, software engineers and mathematicians who design solutions to hard problems. For over 13...</content>
  </entry>

@@ -5,7 +5,7 @@ categories: [Conferences]
 comments: true
 ---
 
-Every good thing comes to an end and so PyCon Italy has also ended. This was my first time at Pycon Italy and infact, this was my first time in Italy. I gave a talk on how FOSS has helped me become a better programmer
+Every good thing comes to an end and so PyCon Italy has also ended. This was my first time at Pycon Italy and infact, this was my first time in Italy. I gave a talk on how FOSS has helped me become a better programmer and then I demonstrated some of the work that I did as a part of the Outreachy internship.
 
 The venue was Grand Hotel Mediterraneo, just 20 minutes walk from the city centre of Florence (how convenient!) and the conference was from 19th April-22nd April. The talks and tutorials were in both Italian and English.
 
@@ -58,13 +58,12 @@ Daniela explained how Athena, a serverless sql-like query service provided by Am
 
 All the talks were a mix of web, data and community related. Moreover, the best part of conferences is meeting new people who have similar interests as yours. I definitely met a lot of interesting people and it was an enriching experience for me.
 
+
 This is me giving the talk:
 
-
-
-These are some pictures from the conference:
-
+![talk]({{ site.url }}/assets/talk.jpeg)
 
 
 And finally this is me posing in front of the Ponte Vecchio (Ponte Vecchio is the famous bridge with three arcs and… come on! You will definitely do some sight-seeing and shopping if you are in Florence ;)):
 
+![italy]({{ site.url }}/assets/italy.jpeg)

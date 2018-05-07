@@ -16,7 +16,7 @@ The talks and tutorials started from the second day, i.e. the 20th April. Since 
 ## Day1: ##
 
 ### Keynote: Don’t try to look smart, be smart by Flavio Percoco ###
-Flavio tries to reflect upon some of his experiences or things he has gone through his career and advises how others should tackle some of these situations in a better way.
+Flavio reflected upon some of his experiences he has gone through his career and advises how others should tackle some of these situations in a better way.
 
 ### Keynote: Can we make the light bulb want to change by Mikey Ariel ###
 Mikey discussed about how going out of your comfort zone can help in growing personally and professionally.

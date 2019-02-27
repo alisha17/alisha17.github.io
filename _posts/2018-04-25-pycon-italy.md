@@ -57,13 +57,3 @@ Stefano reviewed the basic concepts behind Blockchain, starting from its very fi
 Daniela explained how Athena, a serverless sql-like query service provided by Amazon’s AWS, combined with a Python library called PyAthena, made it possible to store and query as much data as needed with low costs, high performances and in a Pythonesque way.
 
 All the talks were a mix of web, data and community related. Moreover, the best part of conferences is meeting new people who have similar interests as yours. I definitely met a lot of interesting people and it was an enriching experience for me.
-
-
-This is me giving the talk:
-
-![talk]({{ site.url }}/assets/talk.jpeg)
-
-
-And finally this is me posing in front of the Ponte Vecchio (Ponte Vecchio is the famous bridge with three arcs and… come on! You will definitely do some sight-seeing and shopping if you are in Florence ;)):
-
-![italy]({{ site.url }}/assets/italy.jpeg)

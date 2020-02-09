@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Authentication API using Okta in Node.js"
+title: "Authentication using Okta API in Node.js"
 categories: [NodeJS, Okta]
 comments: true
 ---
@@ -11,9 +11,9 @@ identity providers. This is a code example of authentication using Okta in Node.
 * I am using the path '/login/okta' with POST method.
 * You can refer to the Okta documentation to login using authentication API here:
     [Okta Authentication API](https://developer.okta.com/docs/reference/api/authn/#request-parameters-for-primary-authentication)
-* For the response parameters you need a username and password.
-* OKTA_APP_URI is the url of your Okta application.
-* After authentication via Okta, I am using the profile information and expiry date returned
+* For the response parameters we need a username and password.
+* OKTA_APP_URI is the url of our Okta application.
+* After authentication via Okta, I am using the profile information in the body of the response and expiry date returned
     via Okta to create a [JWT](https://jwt.io/) token.
 
 ```javascript
@@ -48,8 +48,8 @@ router.post('/login/okta', async function(req, res, next) {
           let userProfile = body['_embedded']['user']['profile'];
           let expiry = Date.parse(body['expiresAt']);
           let payload = {
-            iss: "data61/csiro", //TODO - assign from env var
-            sub: "leeds.v2.api", //TODO - assign from env var
+            iss: "org_name", //can assign from env var
+            sub: "auth.api", //can assign from env var
             jti: uuid4(),
             exp: expiry,
             claims: {
@@ -78,3 +78,5 @@ router.post('/login/okta', async function(req, res, next) {
 });
 
 ```
+
+Hope this helps someone. If you have any questions, feel free to comment below!

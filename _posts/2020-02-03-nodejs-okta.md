@@ -8,7 +8,7 @@ comments: true
 I am currently working on a project which involves implementing authentication using API's of various 
 identity providers. This is a code example of authentication using Okta in Node.js.
 
-* I am using the path '/login/okta' with POST method.
+* I am using the path `/login/okta` with POST method.
 * You can refer to the Okta documentation to login using authentication API here:
     [Okta Authentication API](https://developer.okta.com/docs/reference/api/authn/#request-parameters-for-primary-authentication)
 * For the request body, we need a username and password.

@@ -7,7 +7,11 @@ highlighter:      pygments
 # Setup
 title:            Alisha Aneja
 tagline:          'Welcome'
+<<<<<<< HEAD
 description:      'Programmer by Profession'
+=======
+description:      ' Programmer by Profession'
+>>>>>>> f41f8bc91b9af3b26678c401d007c8b2a79323fc
 url:              http://alisha17.github.io
 
 author:

@@ -11,7 +11,7 @@ identity providers. This is a code example of authentication using Okta in Node.
 * I am using the path '/login/okta' with POST method.
 * You can refer to the Okta documentation to login using authentication API here:
     [Okta Authentication API](https://developer.okta.com/docs/reference/api/authn/#request-parameters-for-primary-authentication)
-* For the response parameters we need a username and password.
+* For the request body, we need a username and password.
 * OKTA_APP_URI is the url of our Okta application.
 * After authentication via Okta, I am using the profile information in the body of the response and expiry date returned
     via Okta to create a [JWT](https://jwt.io/) token.

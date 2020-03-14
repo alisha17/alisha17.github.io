@@ -87,10 +87,10 @@
 <loc>http://localhost:4000/category/ldap/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/category/outreachy/</loc>
+<loc>http://localhost:4000/category/conference/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/category/conference/</loc>
+<loc>http://localhost:4000/category/outreachy/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/category/nodejs/</loc>

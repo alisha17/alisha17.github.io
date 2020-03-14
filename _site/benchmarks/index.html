@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link rel="icon" href="/assets/images/logo.png">
+
+<title>Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning | Alisha Aneja</title>
+
+<!-- Begin Jekyll SEO tag v2.5.0 -->
+<title>Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning | Alisha Aneja</title>
+<meta name="generator" content="Jekyll v3.8.5" />
+<meta property="og:title" content="Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning" />
+<meta name="author" content="alisha" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Introduction" />
+<meta property="og:description" content="Introduction" />
+<link rel="canonical" href="http://localhost:4000/benchmarks/" />
+<meta property="og:url" content="http://localhost:4000/benchmarks/" />
+<meta property="og:site_name" content="Alisha Aneja" />
+<meta property="og:image" content="http://localhost:4000/assets/images/gpu.jpg" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2017-12-15T00:00:00+11:00" />
+<script type="application/ld+json">
+{"description":"Introduction","author":{"@type":"Person","name":"alisha"},"@type":"BlogPosting","url":"http://localhost:4000/benchmarks/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"alisha"},"image":"http://localhost:4000/assets/images/gpu.jpg","headline":"Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning","dateModified":"2017-12-15T00:00:00+11:00","datePublished":"2017-12-15T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/benchmarks/"},"@context":"http://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+<link href="/assets/css/screen.css" rel="stylesheet">
+
+<link href="/assets/css/main.css" rel="stylesheet">
+
+<script src="/assets/js/jquery.min.js"></script>
+
+</head>
+
+
+
+
+<body class="layout-post">
+	<!-- defer loading of font and font awesome -->
+	<noscript id="deferred-styles">
+		<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	</noscript>
+
+
+<!-- Begin Menu Navigation
+================================================== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top mediumnavigation nav-down">
+
+    <div class="container pr-0">
+
+    <!-- Begin Logo -->
+    <a class="navbar-brand" href="/">
+        Home
+    </a>
+    <!-- End Logo -->
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMediumish" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMediumish">
+
+        <!-- Begin Menu -->
+
+            <ul class="navbar-nav ml-auto">
+
+                
+                <li class="nav-item">
+                
+                <a class="nav-link" href="/index.html">Blog</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://twitter.com/alisha_aneja17"><i class="fab fa-twitter"></i></a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://www.linkedin.com/in/alisha-aneja-509252128/"><i class="fab fa-linkedin"></i></a>
+                </li>
+
+                <li class="nav-item">
+                <a target="_blank" class="nav-link" href="https://github.com/alisha17"><i class="fab fa-github"></i></a>
+                </li>
+
+                <script src="/assets/js/lunr.js"></script>
+
+
+<style>
+    .lunrsearchresult .title {color: #d9230f;}
+    .lunrsearchresult .url {color: silver;}
+    .lunrsearchresult a {display: block; color: #777;}
+    .lunrsearchresult a:hover, .lunrsearchresult a:focus {text-decoration: none;}
+    .lunrsearchresult a:hover .title {text-decoration: underline;}
+</style>
+
+
+<form class="bd-search" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+    <input type="text" class="form-control text-small launch-modal-search" id="lunrsearch" name="q" maxlength="255" value="" placeholder="Type and enter..."/>
+</form>
+
+<div id="lunrsearchresults">
+    <ul></ul>
+</div>
+
+<script src="/assets/js/lunrsearchengine.js"></script>
+
+            </ul>
+
+        <!-- End Menu -->
+
+    </div>
+
+    </div>
+</nav>
+<!-- End Navigation
+================================================== -->
+
+<div class="site-content">
+
+<div class="container">
+
+<!-- Site Title
+================================================== -->
+<div class="mainheading">
+    <h1 class="sitetitle" style="font-family:'Times New Roman'"><b>Alisha Aneja</b></h1>
+    <p class="lead">
+        Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast
+    </p>
+</div>
+
+<!-- Content
+================================================== -->
+<div class="main-content">
+    <!-- Begin Article
+================================================== -->
+<div class="container">
+    <div class="row">
+
+        <!-- Post Share -->
+        <div class="col-md-2 pl-0">
+            <div class="share sticky-top sticky-top-offset">
+    <p>
+        Share
+    </p>
+    <ul>
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://twitter.com/intent/tweet?text=Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning&url=http://localhost:4000/benchmarks/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://facebook.com/sharer.php?u=http://localhost:4000/benchmarks/" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+            <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/benchmarks/" onclick="window.open(this.href, 'width=550,height=435');return false;">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </li>
+
+    </ul>
+    
+    <div class="sep">
+    </div>
+    <ul>
+        <li>
+        <a class="small smoothscroll" href="#disqus_thread"></a>
+        </li>
+    </ul>
+    
+</div>
+
+        </div>
+
+        <!-- Post -->
+        
+
+        <div class="col-md-9 flex-first flex-md-unordered">
+            <div class="mainheading">
+
+                <!-- Author Box -->
+                
+                <div class="row post-top-meta">
+                    <div class="col-xs-12 col-md-3 col-lg-2 text-center text-md-left mb-4 mb-md-0">
+                        
+                        <img class="author-thumb" src="https://www.gravatar.com/avatar/?s=250&d=mm&r=x" alt="Alisha">
+                        
+                    </div>
+                    <div class="col-xs-12 col-md-9 col-lg-10 text-center text-md-left">
+                        <a target="_blank" class="link-dark" href="https://www.alishaaneja.com">Alisha</a><a target="_blank" href="https://twitter.com/alisha_aneja17" class="btn follow">Follow</a>
+                        <span class="author-description">Software Engineer at CSIRO's Data61, Python, Javascript, ReactJS, Scala</span>
+                    </div>
+                </div>
+                
+
+                <!-- Post Title -->
+                <h1 class="posttitle">Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning</h1>
+
+            </div>
+
+            <!-- Adsense if enabled from _config.yml (change your pub id and slot) -->
+            
+            <!-- End Adsense -->
+
+            <!-- Post Featured Image -->
+            
+
+            
+            <img class="featured-image img-fluid" src="/assets/images/gpu.jpg" alt="Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning">
+            
+
+            
+            <!-- End Featured Image -->
+
+            <!-- Post Content -->
+            <div class="article-post">
+                <!-- Toc if any -->
+                
+                <!-- End Toc -->
+                <h3 id="introduction">Introduction</h3>
+
+<p>This post aims at comparing two different pieces of hardware that are often used for Deep Learning tasks. The first is a <strong>GTX 1080 Ti GPU</strong>, a gaming device. The second is a <strong>Tesla P100 GPU</strong>, a high-end device devised for data centers which provides high-performance computing for Deep Learning.</p>
+
+<h3 id="hardware">Hardware</h3>
+
+<p>The hardware specifications of both the devices are:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">GeForce GTX® 1080 Ti</th>
+      <th style="text-align: center">Tesla® P100-SMX2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>CUDA Cores</strong></td>
+      <td style="text-align: center">3,584</td>
+      <td style="text-align: center">3,584</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>Floating-point Performance (TFLOPS)</strong></td>
+      <td style="text-align: center">11.3</td>
+      <td style="text-align: center">10.6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>Memory</strong></td>
+      <td style="text-align: center">11 GB (GDDR5X)</td>
+      <td style="text-align: center">16 GB (HBM2)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>Max Power Consumption</strong></td>
+      <td style="text-align: center">250 W</td>
+      <td style="text-align: center">300 W</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>Launch price (USD)</strong></td>
+      <td style="text-align: center">$699</td>
+      <td style="text-align: center">$9,428</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tesla P100 has more memory than GTX 1080 Ti. Also, high-bandwidth HBM2 memory is significantly faster than GDDR5X. The direct CPU-to-GPU NVLink connectivity on P100 enables 5X faster transfers than standard PCI-E.
+However, the cost of P100 is almost 15X more than the 1080 Ti.</p>
+
+<h3 id="software">Software</h3>
+
+<p>We have used the following components for the software:</p>
+<ul>
+  <li><strong>NVIDIA CUDA Toolkit:</strong> 8.0</li>
+  <li><strong>NVIDIA cuDNN:</strong> 5.1</li>
+  <li><strong>Python:</strong> v3.6.3</li>
+  <li><strong>NumPy:</strong> v1.13.3</li>
+  <li><strong>TensorFlow:</strong> v1.4</li>
+  <li><strong>NVIDIA graphics driver:</strong> v384.81</li>
+</ul>
+
+<h3 id="dataset">Dataset</h3>
+
+<p>The <a href="gdo-datasci.ucllnl.org/cowc/">Cars Overhead with Context (COWC)</a> dataset is a large, high quality set of annotated cars from overhead imagery. The data consists of ~33,000 unique cars from six different image locales: Toronto Canada, Selwyn New Zealand, Potsdam and Vaihingen Germany, Columbus and Utah United States. The dataset is described in detail by <a href="https://gdo-datasci.ucllnl.org/cowc/mundhenk_et_al_eccv_2016.pdf">Mundhenk et al, 2016</a>. The Columbus and Vaihingen datasets are in grayscale. The remaining datasets are 3-band RGB images. Data is collected via aerial platforms, but at a view angle such that it resembles satellite imagery.</p>
+
+<p>We chose this dataset as we were already working with it for a project ‘Counting the number of cars in satellite imagery using Deep Learning’. Datasets like MNIST do not aid much in the evaluation of the hardware configurations, since it is a small dataset. Therefore, it is much desirable to use larger and more complex datasets.</p>
+
+<h3 id="model">Model</h3>
+
+<p>The Inception v4 model is known to perform very well on the ImageNet challenge. It has 95.2% Top-5 accuracy.
+However, it did not perform well on our classes of interest. So we fine-tuned this model to adapt for our classes (this approach is also called ‘Transfer Learning’) and named it as ‘Pondception’.</p>
+
+<h3 id="benchmarks">Benchmarks</h3>
+
+<p>In order to compare the performance of both the hardware architectures, we used four benchmarks:</p>
+
+<ul>
+  <li>We trained the Pondception classification network model till 2000 steps for the dataset on the CPU and both the hardware configurations.</li>
+  <li>We used the maximum batch size that the memory of both the hardware configurations can fit and train the model.</li>
+  <li>We monitored the amount of energy consumed and the temperature of both the hardware configurations during the training of the model.</li>
+  <li>We ran some popular convolutional neural network models on both the hardware configurations on synthetic data to avoid potential disk I/O as an overhead.</li>
+</ul>
+
+<h3 id="results">Results</h3>
+
+<h4 id="time-taken-during-training">Time taken during training</h4>
+
+<p>For a batch size of 32 and 2000 training steps, the total time taken to train the model on the CPU, P100 and 1080 Ti was:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"> </th>
+      <th style="text-align: left"><strong>GTX 1080 Ti</strong></th>
+      <th style="text-align: center"><strong>Tesla P100</strong></th>
+      <th style="text-align: center"><strong>CPU</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><strong>Total time taken (in min)</strong></td>
+      <td style="text-align: left">67</td>
+      <td style="text-align: center">51</td>
+      <td style="text-align: center">240</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"><strong>% of time taken</strong></td>
+      <td style="text-align: left">100%</td>
+      <td style="text-align: center">76%</td>
+      <td style="text-align: center">400%</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We can see that the GPU’s are significantly faster than the CPU, with about 4X speedup. Regarding the comparison between both the GPU’s, the P100 outperforms the 1080 Ti, though there is only 1.3X speedup, i.e. the time taken for training is reduced by approximately 20%.</p>
+
+<h4 id="evaluation-metrics-and-validation-loss-comparison">Evaluation Metrics and Validation Loss comparison</h4>
+
+<p>Since the P100 has a larger memory size (i.e. 5 GB more than the 1080 Ti), it is able to fit a larger batch size for the given dataset. While the largest batch size for 1080 Ti is 32, the largest batch size for the P100 is 85. Training with these batch sizes and taking 2000 training steps gives the following results for the evaluation metrics and the loss in validation.</p>
+
+<p><img src="https://s3-eu-west-1.amazonaws.com/satellite-data/Screenshot+from+2017-12-15+09-55-28.png" alt="" /></p>
+
+<p>As we can visualize from the bar chart, there is not much difference in the metrics even though we had taken a larger batch size for the P100. In fact, the accuracy and the other metrics decrease by around 2% in the case of P100. So, we can’t conclude that if we have a larger memory in a GPU and take a larger batch size, it will give better validation accuracy. Moreover, the time taken for training with a larger batch also increases significantly. In the case of P100, while the time taken for training with 2000 steps and the batch size as 32 was 51 minutes, the time taken for training with same number of steps but with the batch size as 85, was 120 minutes (almost double!).</p>
+
+<p><img src="https://s3-eu-west-1.amazonaws.com/satellite-data/Screenshot+from+2017-12-15+10-00-00.png" alt="" /></p>
+
+<p>If we visualize the plot for validation loss in the model for both the GPU’s for 2000 steps, we can see that the validation loss is decreasing more at every subsequent checkpoint in the case of P100. It might have decreased more and converged earlier in case of P100, had we trained for more number of steps.</p>
+
+<h4 id="power-consumption-and-temperature-analysis">Power Consumption and Temperature analysis</h4>
+
+<p>We recorded the power consumption and the temperature of the 1080 Ti and P100, for 5000 points at equal time intervals during the training of the model. Following is the plot for the power consumption by 1080 Ti and P100 during training of the model:</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tNc79gy1fmn5cohs4rj312k0lcjsu.jpg" alt="" /></p>
+
+<p>Following is the plot for the temperature of 1080 Ti and P100 during training of the model:</p>
+
+<p><img src="https://s3-eu-west-1.amazonaws.com/satellite-data/Screenshot+from+2017-12-15+09-49-37.png" alt="" /></p>
+
+<p>As we can infer from the plots, P100 definitely beats 1080 Ti in terms of power consumption and the temperature. For the temperature, it is natural since 1080 Ti GPU’s are installed in our office at room temperature and do not have any special cooling system besides the fans located in the device. Since P100 runs at a lower temperature as compared to the 1080 Ti, it might have special cooling systems or better heat management mechanisms .</p>
+
+<h4 id="image-classification-models-performance">Image classification models performance</h4>
+
+<p>In this section, we use <a href="https://arxiv.org/abs/1512.00567">InceptionV3</a>,  <a href="https://arxiv.org/abs/1512.03385">ResNet-50</a>,  <a href="https://arxiv.org/abs/1409.1556">VGG16</a>, and <a href="https://arxiv.org/abs/1512.03385">ResNet-152</a> models on synthetic data to compare the performance of P100 and 1080 Ti.</p>
+
+<h5 id="speedup-over-cpu">Speedup over CPU</h5>
+
+<p>Compared to the CPUs, GPUs provide huge performance speedups during deep learning training. This is analyzed from the following bar chart. The ResNet-50 model is trained with a batch size of 64.</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fm4n14je2jj30xo0mw401.jpg" alt="" /></p>
+
+<h5 id="speedup-with-multi-gpus">Speedup with multi-GPUs</h5>
+
+<p>Training on double GPUs enhanced the performance significantly, be it P100 or 1080 Ti. However, the P100 was not much faster than the 1080 Ti (with double GPUs). There was only slight improvement, as clear from the line plot below.</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fm82h35wtqj30lj0bzmy5.jpg" alt="" /></p>
+
+<h5 id="half-precision-fp16-performance">Half-Precision (FP16) Performance</h5>
+
+<p>According to the official documentation, P100 is designed for high-performance double-precision floats (FP64) which is used in many HPC applications such as quantum chemistry and numerical simulation, since there are 1792 double-precision CUDA cores, which is half the number of single-precision (FP32) CUDA cores. Even with the GPUs like the 1080 Ti or the Titan X, we can compute with half-precision floats (FP16), however the performance will be slower than single-precision floats (FP32). The P100 also supports FP16 calculation which speeds up deep learning.</p>
+
+<p>Following is a comparison of FP16 and FP32 performances on the P100. There is around 13% speedup on average in this case.</p>
+
+<p><img src="https://ws2.sinaimg.cn/large/006tKfTcgy1fm4ntaizjfj312q0oeq4n.jpg" alt="" /></p>
+
+<h5 id="memory-bottleneck">Memory Bottleneck</h5>
+
+<p>GPU memory will never be too much for large-scale deep learning training. Sometimes the memory will be a bottleneck for training efficiency. Larger mini-batches are more efficient to compute and lead to better convergence in fewer epochs , but at the same time they also require more GPU memory.</p>
+
+<p>P100 has 5GB more memory than 1080 Ti, which enables larger batch size in deep learning. For example, if we use a batch size of 64, the 1080 Ti will run out of memory, however the P100 will still work. This is demonstrated in the following bar chart.</p>
+
+<p><img src="https://ws3.sinaimg.cn/large/006tKfTcgy1fm82ytt7mrj30n30c1js3.jpg" alt="" /></p>
+
+<p>One possible approach to avoid this is by applying half-precision computing because storing FP16 data compared to the higher FP32 or FP64 reduces memory usage, which enables us to use larger batch size or train larger networks. For example, if we use FP16 with a batch size of 64 on ResNet-50 model in 1080 Ti, then the out-of-memory problem will be solved. This is demonstrated in the following bar chart.</p>
+
+<p><img src="https://ws1.sinaimg.cn/large/006tNc79gy1fmm43el98jj30nu0cf750.jpg" alt="" /></p>
+
+<h3 id="conclusions">Conclusions</h3>
+
+<p>We compared two different GPUs by running a couple of Deep Learning benchmarks. These devices are GeForce GTX 1080 and Tesla P100.</p>
+
+<p>After looking at the results, we can argue that the P100 is probably not worth the cost (which is 15X more than the 1080 Ti), while the performance is generally around 15% better.</p>
+
+<p>However, as already discussed in previous section, the larger memory size of P100 would enable to either work with larger networks or with larger batches. Larger batches could lead to better convergence of the gradient descent process, enabling us to train a successful model in a smaller number of epochs. Moreover, P100 might last longer given that it is a high-end device specially devised for datacenters and runs on a lower temperature and is much cooler as compared to the 1080 Ti.</p>
+
+            </div>
+
+            <!-- Rating -->
+            
+
+            <!-- Post Date -->
+            <p>
+            <small>
+                <span class="post-date"><time class="post-date" datetime="2017-12-15">15 Dec 2017</time></span>           
+                
+                </small>
+            </p>
+
+            <!-- Post Categories -->
+            <div class="after-post-cats">
+                <ul class="tags mb-4">
+                    
+                    
+                    <li>
+                        <a class="smoothscroll" href="/categories#machine-learning">machine learning</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <!-- End Categories -->
+
+            <!-- Post Tags -->
+            <div class="after-post-tags">
+                <ul class="tags">
+                    
+                    
+                </ul>
+            </div>
+            <!-- End Tags -->
+
+            <!-- Prev/Next -->
+            <div class="row PageNavigation d-flex justify-content-between font-weight-bold">
+            
+            <a class="prev d-block col-md-6" href="//funcprog/"> &laquo; [PyConID Talk] Introduction to Functional Programming in Python</a>
+            
+            
+            <a class="next d-block col-md-6 text-lg-right" href="//outreachy_journey/">My journey of getting into the Outreachy Program &raquo; </a>
+            
+            <div class="clearfix"></div>
+            </div>
+            <!-- End Categories -->
+
+        </div>
+        <!-- End Post -->
+
+    </div>
+</div>
+<!-- End Article
+================================================== -->
+
+<!-- Begin Comments
+================================================== -->
+
+    <div class="container">
+        <div id="comments" class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <section class="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'alisha17-github-io'; 
+        var disqus_developer = 0;
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = window.location.protocol + '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+            </div>
+        </div>
+    </div>
+
+<!--End Comments
+================================================== -->
+
+<!-- Review with LD-JSON, adapt it for your needs if you like, but make sure you test the generated HTML source code first: 
+https://search.google.com/structured-data/testing-tool/u/0/
+================================================== -->
+
+</div>
+
+
+    
+</div>
+
+<!-- Categories Jumbotron
+================================================== -->
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+            <div class="d-md-flex align-items-center justify-content-center h-100">
+                <h2 class="d-md-block align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+            </div>
+		</div>
+		<div class="col-md-8 p-5 align-self-center text-center">
+            
+            
+                
+                    <a class="mt-1 mb-1" href="/categories#machine-learning">machine learning (4)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#interview">interview (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Code-Camp">Code Camp (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#Ruby-on-Rails">Ruby on Rails (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#python">python (3)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#LDAP">LDAP (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#outreachy">outreachy (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#conference">conference (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#nodejs">nodejs (1)</a>
+                
+                    <a class="mt-1 mb-1" href="/categories#okta">okta (1)</a>
+                
+            
+            
+		</div>
+	</div>
+</div>
+
+<!-- Begin Footer
+================================================== -->
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+                Copyright © 2020 Alisha Aneja 
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- End Footer
+================================================== -->
+
+</div> <!-- /.site-content -->
+
+<!-- Scripts
+================================================== -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+<script src="/assets/js/mediumish.js"></script>
+
+
+
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script> 
+
+
+<script id="dsq-count-scr" src="//alisha17-github-io.disqus.com/count.js"></script>
+
+
+</body>
+</html>

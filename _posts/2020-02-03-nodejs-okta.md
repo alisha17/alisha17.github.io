@@ -1,9 +1,25 @@
 ---
 layout: post
 title: "Authentication using Okta API in Node.js"
-categories: [NodeJS, Okta]
+author: alisha
+categories: [nodejs, okta]
 comments: true
+image: assets/images/okta.jpg
+featured: true
+hidden: true
 ---
+<!-- ---
+layout: post
+title:  "Inception Movie"
+author: john
+categories: [ Jekyll, tutorial ]
+tags: [red, yellow]
+image: assets/images/11.jpg
+description: "My review of Inception movie. Acting, plot and something else in this short description."
+featured: true
+hidden: true
+rating: 4.5
+--- -->
 
 I am currently working on a project which involves implementing authentication using API's of various 
 identity providers. This is a code example of authentication using Okta in Node.js.
@@ -12,7 +28,7 @@ identity providers. This is a code example of authentication using Okta in Node.
 * You can refer to the Okta documentation to login using authentication API here:
     [Okta Authentication API](https://developer.okta.com/docs/reference/api/authn/#request-parameters-for-primary-authentication)
 * For the request body, we need a username and password.
-* OKTA_APP_URI is the url of our Okta application.
+* `OKTA_APP_URI` is the url of our Okta application.
 * After authentication via Okta, I am using the profile information in the body of the response and expiry date returned
     via Okta to create a [JWT](https://jwt.io/) token.
 

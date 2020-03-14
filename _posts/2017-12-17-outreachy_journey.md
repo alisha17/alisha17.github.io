@@ -3,8 +3,10 @@ layout: post
 title: "My journey of getting into the Outreachy Program"
 categories: [outreachy]
 comments: true
-image: http://alisha17.github.io/assets/outreachy.png
 vertical: Code
+author: alisha
+image: assets/images/outr.png
+featured: true
 ---
 
 

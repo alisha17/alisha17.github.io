@@ -1,46 +1,61 @@
-# Dependencies
-markdown:         redcarpet
-highlighter:      pygments
+# Site
+name: "Alisha Aneja"
+title: "Alisha Aneja"
+description: "Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast"
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/logo.png'
+baseurl: ''
+google_analytics: 'UA-46278016-1'
+disqus: 'alisha17-github-io'
+include: ["_pages"]
+permalink: /:title/
 
-# Permalinks
+# Authors
+authors:
+  alisha:
+    name: Alisha
+    display_name: Alisha
+    email: anejaalisha37@gmail.com
+    web: https://www.alishaaneja.com
+    twitter: https://twitter.com/alisha_aneja17
+    description: "Software Engineer at CSIRO's Data61, Python, Javascript, ReactJS, Scala"
 
-# Setup
-title:            Alisha Aneja
-tagline:          'Welcome'
-<<<<<<< HEAD
-description:      'Programmer by Profession'
-=======
-description:      ' Programmer by Profession'
->>>>>>> f41f8bc91b9af3b26678c401d007c8b2a79323fc
-url:              http://alisha17.github.io
-
-author:
-  name:           'Alisha Aneja'
-  url:             alisha17.github.io
-  email:          'anejaalisha37@gmail.com'
-  github:         'https://github.com/alisha17'
-  twitter:        'https://twitter.com/alisha_aneja17'
-  linkedin:       'https://www.linkedin.com/in/alisha-aneja-509252128/'
-  wordpress:      'https://mealisha.wordpress.com/'
-  rss:            'https://alisha17.github.io/feed.xml'
-
-paginate:         5
-
-# Custom vars
-version:          2.1.0
-
-github:
-  repo:           https://github.com/alisha17
-
-gems:             [jekyll-gist, jekyll-paginate, jekyll-archives]
-
-defaults:
-  - scope:
-      path: "assets"
-    values:
-      image: true
-
+# Plugins
 plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
   - jekyll-feed
-  
-theme: jekyll-theme-cayman
+  - jekyll-seo-tag
+  - jekyll-archives
+    
+# Archives
+jekyll-archives:
+  enabled:
+    - categories
+  layout: archive
+  permalinks:
+    category: '/category/:name/'
+    
+# Pagination 
+paginate: 6
+paginate_path: /page:num/
+    
+# Other
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
+
+# Adsense (change to "enabled" to activate, also your client id and ad slot. Create a new ad unit from your Adsense account to get the slot.)
+adsense: "disabled"
+adsense-data-ad-client: "ca-pub-3412143450191416"
+adsense-data-ad-slot: "1363087678"
+
+# Lazy Images ("enabled" or "disabled")
+lazyimages: "disabled"
+
+exclude: [changelog.md, LICENSE.txt, README.md, Gemfile, Gemfile.lock]

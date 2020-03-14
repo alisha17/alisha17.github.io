@@ -1,9 +1,24 @@
 ---
 layout: post
 title: First Week of Machine Learning Internship at SilverPond
-categories: [Silverpond]
+author: alisha
+categories: ['machine learning']
+image: assets/images/18.jpg
 comments: true
 ---
+
+<!-- ---
+layout: post
+title:  "Inception Movie"
+author: john
+categories: [ Jekyll, tutorial ]
+tags: [red, yellow]
+image: assets/images/11.jpg
+description: "My review of Inception movie. Acting, plot and something else in this short description."
+featured: true
+hidden: true
+rating: 4.5
+--- -->
 
 I joined SilverPond as a Machine Learning Intern under the Victorian Chamber Internship Program. It was an interesting opportunity and I was very excited for it since working with data has always intrigued me.
 

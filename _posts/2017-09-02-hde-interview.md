@@ -1,7 +1,9 @@
 ---
 layout: post
 title: Interview Experience with HDE Inc.
-categories: [HDE]
+author: alisha
+categories: ['interview']
+image: assets/images/19.jpeg
 comments: true
 ---
 

@@ -1,8 +1,10 @@
 ---
 layout: post
 title: "Custom Links within ActiveAdmin Pages - Ruby on Rails"
-categories: ['Ruby-on-Rails']
+categories: ['Ruby on Rails']
 comments: true
+author: alisha
+image: assets/images/ruby.png
 ---
 
 I am working on a Ruby on Rails project in my organization and I am very new to Rails. It took me days to find a way for creating custom buttons and their methods alongside the default 'Edit, View, Delete .....' buttons.

@@ -1,9 +1,11 @@
 ---
 layout: post
 title: "Extract random images from videos in Python"
-categories: [Python]
+categories: [python]
 comments: true
 vertical: Code
+author: alisha
+image: assets/images/python_wall.jpg
 ---
 
 I am working on the automatic logo detection in the sports videos using Deep Learning. For this, i will

@@ -1,8 +1,9 @@
 ---
 layout: post
 title: Highlights from PyCon Italy
-categories: [Conferences]
+categories: [conference]
 comments: true
+image: assets/images/ponte.jpg
 ---
 
 Every good thing comes to an end and so PyCon Italy has also ended. This was my first time at Pycon Italy and infact, this was my first time in Italy. I gave a talk on how FOSS has helped me become a better programmer and then I demonstrated some of the work that I did as a part of the Outreachy internship.

@@ -3,6 +3,8 @@ layout: post
 title: Understanding LDAP terminologies
 categories: [LDAP]
 comments: true
+author: alisha
+image: assets/images/ldaptree.png
 ---
 
 When I started to look into the Fedora’s 389 Directory Server, my first concern was understanding LDAP glossary!

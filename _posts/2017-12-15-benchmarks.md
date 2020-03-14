@@ -1,8 +1,11 @@
 ---
 layout: post
 title: "Performance Comparison between NVIDIA’s GeForce GTX 1080 and Tesla P100 for Deep Learning"
-categories: [Machine-Learning]
+categories: ["machine learning"]
 comments: true
+author: alisha
+image: assets/images/gpu.jpg
+featured: true
 ---
 
 ### Introduction

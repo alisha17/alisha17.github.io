@@ -5,8 +5,8 @@
     <description>Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 22 Nov 2020 22:38:47 +1100</pubDate>
-    <lastBuildDate>Sun, 22 Nov 2020 22:38:47 +1100</lastBuildDate>
+    <pubDate>Sun, 22 Nov 2020 23:21:24 +1100</pubDate>
+    <lastBuildDate>Sun, 22 Nov 2020 23:21:24 +1100</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -29,7 +29,8 @@ It involves coding visually which makes it easy to understand the role each
  abilities at the same time. The following picture is from the spark class:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/IMG_0864.jpg&quot; alt=&quot;spark&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/spark2.jpg&quot; alt=&quot;spark&quot; /&gt;
+&lt;img src=&quot;http://localhost:4000/assets/functprog/function.png&quot; alt=&quot;function&quot; /&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -44,7 +45,7 @@ level and is recommended to be done after Spark and Ignite classes. The kids lea
 simple website (for eg: portfolio, calculator, tetris game) using HTML, CSS and Javascript.
  They have full control over what they want to create, so their creativity has no bounds!
  The following is a picture from Web builders class:
- &lt;img src=&quot;http://localhost:4000/assets/codecamp/IMG_0845.jpg&quot; alt=&quot;web&quot; /&gt;&lt;/p&gt;
+ &lt;img src=&quot;http://localhost:4000/assets/codecamp/web_builders.jpg&quot; alt=&quot;web&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;strong&gt;Youtube Creators​&lt;/strong&gt; - I wish there was a youtube creators class when I was a kid! 
@@ -76,7 +77,7 @@ registered for it!This class is for kids aged 8 -13 and as the name suggests, th
 
 &lt;p&gt;And one last picture taken during the recess! (It was a beautiful day.. :) )&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/IMG_0848.jpg&quot; alt=&quot;final pic&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/spark.jpg&quot; alt=&quot;final pic&quot; /&gt;&lt;/p&gt;
 
 </description>
         <pubDate>Tue, 17 Nov 2020 00:00:00 +1100</pubDate>
@@ -425,8 +426,6 @@ Following is the script (this is in python2; for python3, it should just be a ma
       <item>
         <title>My journey of getting into the Outreachy Program</title>
         <description>&lt;h2 id=&quot;what-is-outreachy&quot;&gt;What is Outreachy?&lt;/h2&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/outreachy.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.outreachy.org/&quot;&gt;Outreachy&lt;/a&gt; provides &lt;strong&gt;three-month internships&lt;/strong&gt; for people from groups traditionally &lt;strong&gt;underrepresented in tech&lt;/strong&gt;. Interns are paid a stipend of &lt;strong&gt;$5,500&lt;/strong&gt; and have a &lt;strong&gt;$500 travel stipend&lt;/strong&gt; available to them. Interns work &lt;strong&gt;remotely&lt;/strong&gt; with mentors from Free and Open Source Software (FOSS) communities on projects ranging from &lt;strong&gt;programming, user experience, documentation, illustration and graphical design, to data science&lt;/strong&gt;. Interns often find employment after their internship with Outreachy sponsors or in jobs that use the FOSS skills they learned during their internship.&lt;/p&gt;
 

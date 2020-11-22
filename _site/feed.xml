@@ -5,34 +5,100 @@
     <description>Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Mar 2020 23:10:39 +1100</pubDate>
-    <lastBuildDate>Sat, 14 Mar 2020 23:10:39 +1100</lastBuildDate>
-    <generator>Jekyll v3.8.5</generator>
+    <pubDate>Sun, 22 Nov 2020 22:38:47 +1100</pubDate>
+    <lastBuildDate>Sun, 22 Nov 2020 22:38:47 +1100</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>Code Camp - September 2020 edition!</title>
+        <description>&lt;p&gt;Code camp​ is a 2 - 4 day coding camp for kids aged 5-14 where they code, 
+create and develop their very own app, with help and support from instructors 
+and assistants. This time I participated in the code camp held at Waverley College,
+Sydney from 29th Sep - 1st Oct. The classes run from 9am to 3.30pm with a recess 
+from 10.45 - 11.15am and a lunch break from 12.45-1.30pm.&lt;/p&gt;
+
+&lt;p&gt;There were four different classes for the kids to choose from:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Spark​&lt;/strong&gt; - Spark class is for kids aged 7-12. They learn how to design games 
+(including heroes, coins, swords, lives, different scenes like beach, castle etc.) 
+using drag and drop code and logic to connect the elements with each other in a level 
+or a scene. All the games are developed on the Code Camp World platform.
+It involves coding visually which makes it easy to understand the role each
+ function playing their game, hence helping enhance their creativity and cognitive 
+ abilities at the same time. The following picture is from the spark class:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/IMG_0864.jpg&quot; alt=&quot;spark&quot; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Ignite​&lt;/strong&gt; - Ignite class is the next level after completing the Spark class. 
+The kids still design and develop games using drag and drop, however it also
+ includes some basic javascript coding. The games are more advanced than the
+games designed in the Spark class.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;WebBuilders​&lt;/strong&gt; - Web builders is for kids aged 8-13. This is a fairly advanced 
+level and is recommended to be done after Spark and Ignite classes. The kids learn how to create a
+simple website (for eg: portfolio, calculator, tetris game) using HTML, CSS and Javascript.
+ They have full control over what they want to create, so their creativity has no bounds!
+ The following is a picture from Web builders class:
+ &lt;img src=&quot;http://localhost:4000/assets/codecamp/IMG_0845.jpg&quot; alt=&quot;web&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Youtube Creators​&lt;/strong&gt; - I wish there was a youtube creators class when I was a kid! 
+With the advent of social media apps like Instagram and Tik Tok and video streaming platforms,
+ creating videos has become an essential skill. This class is very new and was offered for 
+ the very first time during these school holidays (Sept’20) and still had a lot of kids
+registered for it!This class is for kids aged 8 -13 and as the name suggests, they
+ learn how to plan, design, shoot and edit their videos including how to cut footage and
+  add music, different video effects and transitions etc.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I mainly assisted in teaching the Spark and Web Builders classes this time.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Some observations:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Most of the kids were very happy and really interested in creating games and websites,
+ while some were clearly pushed by their parents and sent to the camp to learn coding.&lt;/li&gt;
+  &lt;li&gt;Most of the kids had already participated in these coding camps in previous terms and were excited to do the next level (Web builders &amp;gt; Ignite &amp;gt; Spark)&lt;/li&gt;
+  &lt;li&gt;The kids also spent some time working on their games and websites out of the class, which is very
+ encouraging! (P.S. they can access it using the Code Camp World platform anytime)&lt;/li&gt;
+  &lt;li&gt;Although code camp provides laptops to work on, many kids brought their own laptops
+  and were quite good at using it, which means they are already tech savvy!&lt;/li&gt;
+  &lt;li&gt;Although code camp markets these camps really well and within diverse communities,
+   on an average the male to female ratio was 2:1 and there were not a lot of kids 
+   from diverse ethnic and cultural backgrounds. (This might vary on the location and city)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And one last picture taken during the recess! (It was a beautiful day.. :) )&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/codecamp/IMG_0848.jpg&quot; alt=&quot;final pic&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Tue, 17 Nov 2020 00:00:00 +1100</pubDate>
+        <link>http://localhost:4000/codecamp2020/</link>
+        <guid isPermaLink="true">http://localhost:4000/codecamp2020/</guid>
+        
+        
+        <category>Code Camp</category>
+        
+      </item>
     
       <item>
         <title>Authentication using Okta API in Node.js</title>
-        <description>&lt;!-- ---
-layout: post
-title:  &quot;Inception Movie&quot;
-author: john
-categories: [ Jekyll, tutorial ]
-tags: [red, yellow]
-image: assets/images/11.jpg
-description: &quot;My review of Inception movie. Acting, plot and something else in this short description.&quot;
-featured: true
-hidden: true
-rating: 4.5
---- --&gt;
-
-&lt;p&gt;I am currently working on a project which involves implementing authentication using API’s of various 
+        <description>&lt;p&gt;I am currently working on a project which involves implementing authentication using API’s of various 
 identity providers. This is a code example of authentication using Okta in Node.js.&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;I am using the path &lt;code class=&quot;highlighter-rouge&quot;&gt;/login/okta&lt;/code&gt; with POST method.&lt;/li&gt;
+  &lt;li&gt;I am using the path &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/login/okta&lt;/code&gt; with POST method.&lt;/li&gt;
   &lt;li&gt;You can refer to the Okta documentation to login using authentication API here:
   &lt;a href=&quot;https://developer.okta.com/docs/reference/api/authn/#request-parameters-for-primary-authentication&quot;&gt;Okta Authentication API&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;For the request body, we need a username and password.&lt;/li&gt;
-  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;OKTA_APP_URI&lt;/code&gt; is the url of our Okta application.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;OKTA_APP_URI&lt;/code&gt; is the url of our Okta application.&lt;/li&gt;
   &lt;li&gt;After authentication via Okta, I am using the profile information in the body of the response and expiry date returned
   via Okta to create a &lt;a href=&quot;https://jwt.io/&quot;&gt;JWT&lt;/a&gt; token.&lt;/li&gt;
 &lt;/ul&gt;
@@ -339,7 +405,7 @@ Following is the script (this is in python2; for python3, it should just be a ma
 
 &lt;p&gt;Run the above code using the following command (I wanted 250 random images from this video):&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;python extract_images_from_videos.py --video-path=&quot;/home/alisha/AFL 2017 Season Highlights-0O3rHhzO9VQ.mkv&quot; --num-images=250 --save-to-path=&quot;/home/alisha/test_folder&quot;
 
@@ -785,7 +851,7 @@ Tail call optimisation/ Tail recursion optimisation is a special case of last ca
 &lt;p&gt;​
 We can consider this as:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&amp;gt; addOne 3
 &amp;gt; (add 1) 3
@@ -1004,7 +1070,7 @@ which are True for the function.&lt;/p&gt;
 &lt;p&gt;In this example, we are calculating the product of all elements in the list. So the evaluation order
 works like:&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;(((47 * 11) * 42) * 13)
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
@@ -1377,42 +1443,42 @@ cn: alisha
   &lt;li&gt;
     &lt;p&gt;Clone the python-evtx directory in your system.&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;git clone https://github.com/williballenthin/python-evtx.git
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Go into the cloned directory.&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;cd python-evtx
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Install the libraries&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;python3 setup.py install
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Go to the scripts directory inside python-evtx.&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;cd scripts
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Run the following command if you just have one file which you want to convert.&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 &lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;python3 evtx_dump.py /mnt/data/alisha/logs/dc/security.evtx
 &lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;In my case, I had folders inside folders which had .evtx files to convert, so I did:&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
 2
 3
 4
@@ -1492,87 +1558,6 @@ a file into XML due to some error, the filename will get saved in conversion.log
         <pubDate>Mon, 20 Nov 2017 00:00:00 +1100</pubDate>
         <link>http://localhost:4000/pyladies/</link>
         <guid isPermaLink="true">http://localhost:4000/pyladies/</guid>
-        
-        
-        <category>machine learning</category>
-        
-      </item>
-    
-      <item>
-        <title>[MLAI Meetup Talk] My Experience as a Machine Learning Intern</title>
-        <description>&lt;p&gt;I started my internship at SilverPond as a Machine Learning Engineer in September.&lt;/p&gt;
-
-&lt;p&gt;I spent initial few weeks getting familiar with Silverbrane. Silverbrane is an amazing Machine Learning product developed by an amazing team at SilverPond which combines optimised expert-driven tooling with AI, which in brief does this:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/silverbrane.png&quot; alt=&quot;pizzeria hde3&quot; /&gt;&lt;/p&gt;
-
-&lt;h1 id=&quot;project-1&quot;&gt;Project 1:&lt;/h1&gt;
-
-&lt;p&gt;My first project was “Server provisioning in Silverbrane”. I had to provision the server to automatically spin the workers to start training the model, which was previously a manual process.&lt;/p&gt;
-
-&lt;p&gt;By the end of it, I learnt about:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Managing AWS ec2 instances using console&lt;/li&gt;
-  &lt;li&gt;Managing AWS ec2 instances using programming (using aws-sdk for ruby)&lt;/li&gt;
-  &lt;li&gt;How Ruby on Rails project is structured&lt;/li&gt;
-  &lt;li&gt;Finding my way inside a rails project (Though I still don’t understand Rails or Ruby much!)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h1 id=&quot;project-2&quot;&gt;Project 2:&lt;/h1&gt;
-
-&lt;p&gt;At the moment, I am working on an another project in which we “Count the number of cars in overhead imagery with deep learning”. This project tries to replicate the results presented in this paper: &lt;a href=&quot;https://gdo-datasci.ucllnl.org/cowc/mundhenk_et_al_eccv_2016.pdf&quot;&gt;Mundhenk et al. 2016&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Vehicle localization from satellite imagery has myriad use cases in the commercial, national security, and humanitarian realms. On the commercial front, a number of companies have attempted to infer retail traffic from parking lot density levels, and tracking delivery trucks in near real-time is one of the far-field goals of satellite imagery analytics. In the realm of national security, detecting the buildup of war materiel in unstable regions would provide obvious value, as would locating convoys of vehicles vectored towards unmanned border crossings, or identifying a large number of vehicles staging just outside the range of terrestrial border monitoring equipment. On the humanitarian front, one might attempt to infer the scope of natural disasters from clusters (or absences) of vehicles, or determine optimal travel routes for disaster relief in unknown areas based on observations of local vehicle movements.
-Dataset&lt;/p&gt;
-
-&lt;p&gt;The dataset consists of large number of unique cars (~33,000) from six different imagesets, where each imageset has more than 60,000 images. Each imageset covers a different geographical location and produced by different imagers and has different training and test sets. The regions are Toronto Canada, Selwyn New Zealand, Potsdam &amp;amp; Vaihingen Germany, Columbus &amp;amp; Utah United States. Data is collected via aerial platforms, but at a view angle such that it resembles satellite imagery. The imagery has a resolution of 15 cm ground sample distance (GSD) that is approximately twice as good as the current best resolution of commercial satellite imagery.&lt;/p&gt;
-
-&lt;p&gt;Dataset consists of images like these:&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/null1.png&quot; alt=&quot;pizzeria hde3&quot; /&gt;
-&lt;img src=&quot;http://localhost:4000/assets/null3.png&quot; alt=&quot;pizzeria hde3&quot; /&gt;&lt;/p&gt;
-
-&lt;h2 id=&quot;approach&quot;&gt;Approach:&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;I started by using inception model to classify the images, though it is not really good at classifying correctly, since it is a baseline model. I downloaded a pre-trained inception model, since it takes weeks to train on a monster computer with 8 Tesla K40 GPUs costing ~$30,000 so it is impossible to train it on an ordinary PC.&lt;/li&gt;
-  &lt;li&gt;I trained the model by logistic regression using scikit-learn. It is a multi way classification where we have 64 classes (the maximum number of cars that are in any image/patch is 64).&lt;/li&gt;
-  &lt;li&gt;I took the training and test set together and later split it.&lt;/li&gt;
-  &lt;li&gt;With close to 1 million images, the accuracy achieved was ~55%.&lt;/li&gt;
-  &lt;li&gt;But if all the images from training and test set is taken it would take approx. 2 days to train the model.&lt;/li&gt;
-  &lt;li&gt;So,I trained the model by logistic regression using Tensorflow, where I took the image in batches (say, 50).&lt;/li&gt;
-  &lt;li&gt;With close to 40,000 images, The accuracy achieved was ~48%.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;But the methodology mentioned in the paper is able to achieve an accuracy of ~80%.&lt;/p&gt;
-
-&lt;h2 id=&quot;how-may-we-increase-the-accuracy--have-to-try-these-out-once-i-do-i-will-update-the-post&quot;&gt;How may we increase the accuracy? ( Have to try these out, once I do, I will update the post)&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Instead of inception model, use a different model, like Resception, &lt;a href=&quot;https://gdo-datasci.ucllnl.org/cowc/mundhenk_et_al_eccv_2016.pdf&quot;&gt;Mundhenk et al. 2016&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;Reserve the Utah region (both training and test) for training purposes as it differs significantly in car density, building architecture, &amp;amp; vegetation patterns from regions in Germany, New Zealand, and Canada, hence provides a rigorous training case.&lt;/li&gt;
-  &lt;li&gt;Run on the validation set provided by the authors of the paper.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;by-the-end-of-the-internship-i-expect-to&quot;&gt;By the end of the internship, I expect to…&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Get intermediate experience with deep learning frameworks like &lt;a href=&quot;https://www.tensorflow.org/&quot;&gt;Tensorflow&lt;/a&gt; &amp;amp; &lt;a href=&quot;http://pytorch.org/&quot;&gt;Pytorch&lt;/a&gt; and machine learning libraries like &lt;a href=&quot;http://scikit-learn.org/stable/&quot;&gt;scikit-learn&lt;/a&gt;.&lt;/li&gt;
-  &lt;li&gt;Get more familiar with various deep learning approaches.&lt;/li&gt;
-  &lt;li&gt;Be proficient in skimming through research papers and apply the methodologies to practical projects (Because reading research papers is so damn boring!).&lt;/li&gt;
-  &lt;li&gt;Build a foundation to become a machine learning engineer after my graduation!&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;I will update the code on Github as well once I complete the project.&lt;/p&gt;
-
-&lt;p&gt;I gave this talk at the Melbourne MLAI meetup. This is the Meetup &lt;a href=&quot;https://www.meetup.com/Machine-Learning-AI-Meetup/events/242581813/?gj=co2&amp;amp;rv=co2&quot;&gt;link&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Hope you enjoyed it! :)&lt;/p&gt;
-</description>
-        <pubDate>Wed, 18 Oct 2017 00:00:00 +1100</pubDate>
-        <link>http://localhost:4000/mlai/</link>
-        <guid isPermaLink="true">http://localhost:4000/mlai/</guid>
         
         
         <category>machine learning</category>

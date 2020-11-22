@@ -10,12 +10,12 @@
 
 <!-- Begin Jekyll SEO tag v2.5.0 -->
 <title>Authentication using Okta API in Node.js | Alisha Aneja</title>
-<meta name="generator" content="Jekyll v3.8.5" />
+<meta name="generator" content="Jekyll v3.9.0" />
 <meta property="og:title" content="Authentication using Okta API in Node.js" />
 <meta name="author" content="alisha" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast" />
-<meta property="og:description" content="Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast" />
+<meta name="description" content="I am currently working on a project which involves implementing authentication using API’s of various identity providers. This is a code example of authentication using Okta in Node.js." />
+<meta property="og:description" content="I am currently working on a project which involves implementing authentication using API’s of various identity providers. This is a code example of authentication using Okta in Node.js." />
 <link rel="canonical" href="http://localhost:4000/nodejs-okta/" />
 <meta property="og:url" content="http://localhost:4000/nodejs-okta/" />
 <meta property="og:site_name" content="Alisha Aneja" />
@@ -23,7 +23,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-02-03T00:00:00+11:00" />
 <script type="application/ld+json">
-{"description":"Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast","author":{"@type":"Person","name":"alisha"},"@type":"BlogPosting","url":"http://localhost:4000/nodejs-okta/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"alisha"},"image":"http://localhost:4000/assets/images/okta.jpg","headline":"Authentication using Okta API in Node.js","dateModified":"2020-02-03T00:00:00+11:00","datePublished":"2020-02-03T00:00:00+11:00","mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/nodejs-okta/"},"@context":"http://schema.org"}</script>
+{"mainEntityOfPage":{"@type":"WebPage","@id":"http://localhost:4000/nodejs-okta/"},"author":{"@type":"Person","name":"alisha"},"url":"http://localhost:4000/nodejs-okta/","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"http://localhost:4000/assets/images/logo.png"},"name":"alisha"},"headline":"Authentication using Okta API in Node.js","dateModified":"2020-02-03T00:00:00+11:00","datePublished":"2020-02-03T00:00:00+11:00","image":"http://localhost:4000/assets/images/okta.jpg","description":"I am currently working on a project which involves implementing authentication using API’s of various identity providers. This is a code example of authentication using Okta in Node.js.","@type":"BlogPosting","@context":"http://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 
@@ -230,28 +230,15 @@
                 <!-- Toc if any -->
                 
                 <!-- End Toc -->
-                <!-- ---
-layout: post
-title:  "Inception Movie"
-author: john
-categories: [ Jekyll, tutorial ]
-tags: [red, yellow]
-image: assets/images/11.jpg
-description: "My review of Inception movie. Acting, plot and something else in this short description."
-featured: true
-hidden: true
-rating: 4.5
---- -->
-
-<p>I am currently working on a project which involves implementing authentication using API’s of various 
+                <p>I am currently working on a project which involves implementing authentication using API’s of various 
 identity providers. This is a code example of authentication using Okta in Node.js.</p>
 
 <ul>
-  <li>I am using the path <code class="highlighter-rouge">/login/okta</code> with POST method.</li>
+  <li>I am using the path <code class="language-plaintext highlighter-rouge">/login/okta</code> with POST method.</li>
   <li>You can refer to the Okta documentation to login using authentication API here:
   <a href="https://developer.okta.com/docs/reference/api/authn/#request-parameters-for-primary-authentication">Okta Authentication API</a></li>
   <li>For the request body, we need a username and password.</li>
-  <li><code class="highlighter-rouge">OKTA_APP_URI</code> is the url of our Okta application.</li>
+  <li><code class="language-plaintext highlighter-rouge">OKTA_APP_URI</code> is the url of our Okta application.</li>
   <li>After authentication via Okta, I am using the profile information in the body of the response and expiry date returned
   via Okta to create a <a href="https://jwt.io/">JWT</a> token.</li>
 </ul>
@@ -425,6 +412,8 @@ identity providers. This is a code example of authentication using Okta in Node.
             <a class="prev d-block col-md-6" href="/pycon-italy/"> &laquo; Highlights from PyCon Italy</a>
             
             
+            <a class="next d-block col-md-6 text-lg-right" href="/codecamp2020/">Code Camp - September 2020 edition! &raquo; </a>
+            
             <div class="clearfix"></div>
             </div>
             <!-- End Categories -->
@@ -492,7 +481,7 @@ https://search.google.com/structured-data/testing-tool/u/0/
                 
                     <a class="mt-1 mb-1" href="/categories#interview">interview (1)</a>
                 
-                    <a class="mt-1 mb-1" href="/categories#Code-Camp">Code Camp (1)</a>
+                    <a class="mt-1 mb-1" href="/categories#Code-Camp">Code Camp (2)</a>
                 
                     <a class="mt-1 mb-1" href="/categories#Ruby-on-Rails">Ruby on Rails (1)</a>
                 

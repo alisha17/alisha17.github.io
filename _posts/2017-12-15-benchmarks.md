@@ -110,37 +110,23 @@ In this section, we use [InceptionV3](https://arxiv.org/abs/1512.00567),  [ResNe
 
 ##### Speedup over CPU
 
-Compared to the CPUs, GPUs provide huge performance speedups during deep learning training. This is analyzed from the following bar chart. The ResNet-50 model is trained with a batch size of 64.
-
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fm4n14je2jj30xo0mw401.jpg)
+Compared to the CPUs, GPUs provide huge performance speedups during deep learning training. The ResNet-50 model is trained with a batch size of 64.
 
 ##### Speedup with multi-GPUs
 
-Training on double GPUs enhanced the performance significantly, be it P100 or 1080 Ti. However, the P100 was not much faster than the 1080 Ti (with double GPUs). There was only slight improvement, as clear from the line plot below.
-
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fm82h35wtqj30lj0bzmy5.jpg)
-
-
+Training on double GPUs enhanced the performance significantly, be it P100 or 1080 Ti. However, the P100 was not much faster than the 1080 Ti (with double GPUs). There was only slight improvement.
 
 ##### Half-Precision (FP16) Performance
 
 According to the official documentation, P100 is designed for high-performance double-precision floats (FP64) which is used in many HPC applications such as quantum chemistry and numerical simulation, since there are 1792 double-precision CUDA cores, which is half the number of single-precision (FP32) CUDA cores. Even with the GPUs like the 1080 Ti or the Titan X, we can compute with half-precision floats (FP16), however the performance will be slower than single-precision floats (FP32). The P100 also supports FP16 calculation which speeds up deep learning.
-
-Following is a comparison of FP16 and FP32 performances on the P100. There is around 13% speedup on average in this case.
-
-![](https://ws2.sinaimg.cn/large/006tKfTcgy1fm4ntaizjfj312q0oeq4n.jpg)
+There is around 13% speedup on average in this case.
 
 ##### Memory Bottleneck
 
 GPU memory will never be too much for large-scale deep learning training. Sometimes the memory will be a bottleneck for training efficiency. Larger mini-batches are more efficient to compute and lead to better convergence in fewer epochs , but at the same time they also require more GPU memory.
+P100 has 5GB more memory than 1080 Ti, which enables larger batch size in deep learning. For example, if we use a batch size of 64, the 1080 Ti will run out of memory, however the P100 will still work.
 
-P100 has 5GB more memory than 1080 Ti, which enables larger batch size in deep learning. For example, if we use a batch size of 64, the 1080 Ti will run out of memory, however the P100 will still work. This is demonstrated in the following bar chart.
-
-![](https://ws3.sinaimg.cn/large/006tKfTcgy1fm82ytt7mrj30n30c1js3.jpg)
-
-One possible approach to avoid this is by applying half-precision computing because storing FP16 data compared to the higher FP32 or FP64 reduces memory usage, which enables us to use larger batch size or train larger networks. For example, if we use FP16 with a batch size of 64 on ResNet-50 model in 1080 Ti, then the out-of-memory problem will be solved. This is demonstrated in the following bar chart.
-
-![](https://ws1.sinaimg.cn/large/006tNc79gy1fmm43el98jj30nu0cf750.jpg)
+One possible approach to avoid this is by applying half-precision computing because storing FP16 data compared to the higher FP32 or FP64 reduces memory usage, which enables us to use larger batch size or train larger networks. For example, if we use FP16 with a batch size of 64 on ResNet-50 model in 1080 Ti, then the out-of-memory problem will be solved.
 
 ### Conclusions
 

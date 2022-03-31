@@ -5,19 +5,38 @@ permalink: /about
 comments: true
 ---
 
-I love programming, watching movies, teaching and running. I love eating and trying out new cuisines and restaurants too.
+Professionally:
 
-I completed my Master of Science (Computer Science) from University of Melbourne. My thesis is on 'Fake News Detection on Twitter by Evaluating User Credibility'.
+I am a generalist software engineer who likes to learn new things. After years of working with amazing organisations and amazing
+people, I am now focusing on running my software consultancy.
 
-Previously, I have interned with Silverpond as a Machine Learning Engineer, Fedora as a Software Engineer and Linux as a Software Engineer.
+- My tech interests include: bioinformatics, astronomy and fintech (I know there's no correlation between them) 
+- My tech stack includes: Python, Javascript (ReactJS, NodeJS), NLP & ML, Spark, AWS, Azure, Docker, Kubernetes
+- Special interests in: Rust and Haskell
 
-I have worked at Move37 as a Software Engineer where I worked on the Natural Language Processing features of the product.
+Some organisations I have worked with in the past and present: 
+- European Bioinformatics Institute
+- Commonwealth Scientific and Industrial Research Organisation (CSIRO)
+- Commonwealth Bank of Australia (CBA)
+- Macquarie Bank
+- Linux
+- Fedora
+- Insurance Australia Group (IAG)
+- Sportradar
+- Diversity Arrays
+- University of Melbourne
 
-I am currently working at CSIRO's Data61, which is an Australian Commonwealth Research Organization. I am working in the Privacy Enhancing Systems group.
+Personally:
 
-I have experience in Python, Javascript, NodeJS, ReactJS, Scala and a bit of Haskell.
+- I like being outdoors - hiking, trekking, running or just strolling in the parks
+- I like traveling - history, culture, arts and food
+- I like watching tv series and movies - I quote `The Office` too much!
+- And I definitely love sleeping (genuinely sleeping, nothing dirty!)
 
-Don't hesitate to contact me if you have any questions or you could just maybe drop me a message (via Twitter, LinkedIn or my email) and say hi!
+Always open to fruitful collaborations and contractual/freelance projects.
+
+Don't hesitate to contact me if you have any questions or you could just drop me a message (via Twitter, LinkedIn or my email) and say hi!
+
 
 <!-- 
 <div class="row justify-content-between">

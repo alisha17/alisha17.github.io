@@ -1,7 +1,7 @@
 # Site
 name: "Alisha Aneja"
 title: "Alisha Aneja"
-description: "Software Engineer @ CSIRO Data61 - Python, Javascript, Scala, ReactJS enthusiast"
+description: "When you have a dream, you’ve got to grab it and never let go"
 logo: 'assets/images/logo.png'
 favicon: 'assets/images/logo.png'
 baseurl: ''
@@ -19,7 +19,7 @@ authors:
     email: anejaalisha37@gmail.com
     web: https://www.alishaaneja.com
     twitter: https://twitter.com/alisha_aneja17
-    description: "Software Engineer at CSIRO's Data61, Python, Javascript, ReactJS, Scala"
+    description: "When you have a dream, you’ve got to grab it and never let go"
 
 # Plugins
 plugins:

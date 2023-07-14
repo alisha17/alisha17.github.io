@@ -3,7 +3,7 @@ layout: post
 title: "Data Extraction - Python APIs for Webscraping and Dumping"
 categories: ['python']
 comments: true
-author: pabitra
+author: alisha
 image: assets/images/pythonimage.png
 ---
 

@@ -3,6 +3,7 @@ layout: post
 title: Highlights from PyCon Italy
 categories: [conference]
 comments: true
+author: alisha
 image: assets/images/ponte.jpg
 ---
 

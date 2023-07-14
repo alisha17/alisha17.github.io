@@ -5,6 +5,7 @@ categories: ['python']
 comments: true
 author: alisha
 image: assets/images/pythonimage.png
+featured: true
 ---
 
 
